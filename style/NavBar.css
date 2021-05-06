@@ -81,7 +81,7 @@
 
 .dropdown-second {
     position: absolute;
-    top: -2px;
+    top: -1px;
     right: -200px;
 }
 
@@ -89,7 +89,41 @@
     border-left: none;
 }
 
+.pro, .particulier {
+    transition: background-color 250ms ease-in-out;
+    display: flex;
+}
+
+.pro:hover, .particulier:hover {
+    background-color: rgba(219,98,39, 0.5);
+}
+
+.pro > span {
+
+    visibility: hidden;
+    padding-left: 2%;
+
+    transition: padding-left 250ms ease-in-out;
+}
+
+.pro:hover span {
+    visibility: visible;
+    padding-left: 30%;
+}
+
 .pro:hover .dropdown-second {
+    display: block;
+}
+
+.particulier:hover .dropdown-second {
+    display: block;
+}
+
+.particulier:hover .dropdown-second {
+    display: block;
+}
+
+.particulier:hover .dropdown-second {
     display: block;
 }
 
