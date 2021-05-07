@@ -1,11 +1,9 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+/* -------------------------- */
+/* === */ /* NavBar */ /* === */
+/* -------------------------- */
 
 .header {
-    height: 262px;
+    height: 100px;
     width: 100%;
     background-color: white;
     padding: 10px 0;
@@ -23,7 +21,7 @@
     color: black;
     text-decoration: none;
     outline: 0;
-    font-size: 1.3em;
+    font-size: 1.5vw;
     font-weight: bold;
     -moz-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
     -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -37,15 +35,21 @@
         border-radius: 8px;
     }
 
+/* Logo */
+
 .logo {
     z-index: 900;
     position: relative;
 }
 
 .logo img {
-    width: 154px;
-    height: 154px;
+    width: 12vw;
+    height: 12vw;
 }
+
+/* DROP DOWN */
+
+/* prestation */
 
 .dropdown-item {
     position: relative;
@@ -89,6 +93,8 @@
     border-left: none;
 }
 
+/* Professionnels, particulier, scolaire, etc... */
+
 .pro, .particulier {
     transition: background-color 250ms ease-in-out;
     display: flex;
@@ -97,6 +103,8 @@
 .pro:hover, .particulier:hover {
     background-color: rgba(219,98,39, 0.5);
 }
+
+/* .pro */
 
 .pro > span {
 
@@ -115,9 +123,28 @@
     display: block;
 }
 
+
+/* .particulier */
+
 .particulier:hover .dropdown-second {
     display: block;
 }
+
+.particulier > span {
+    visibility: hidden;
+    padding-left: 2%;
+
+    transition: padding-left 250ms ease-in-out;
+}
+
+.particulier:hover span {
+    visibility: visible;
+    padding-left: 42%;
+}
+
+
+
+
 
 .particulier:hover .dropdown-second {
     display: block;

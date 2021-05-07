@@ -2,21 +2,29 @@
 /* === */ /* FOOTER */ /* === */
 /* -------------------------- */
 
+.hrFooter {
+    color: #db6227;
+}
 
+
+/* grille du footer */
 .grid-footer 
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 0px;
-    }
+}
     
-    .col1-footer { grid-area: 1 / 1 / 2 / 2; }
-    .col2-footer { grid-area: 1 / 2 / 2 / 3; }
+.col1-footer { grid-area: 1 / 1 / 2 / 2; }
+.col2-footer { grid-area: 1 / 2 / 2 / 3; }
+
+
+/* logo footer */
 
 .logo-footer
 {
-    width: 30%;
+    width: 12vw;
     display: block;
     margin: 0 auto;
 }
@@ -26,12 +34,14 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1.5vw; 
+    font-size: 1.2vw; 
 }
+
+/* icons réseaux sociaux */
 
 .logo-rs-footer
 {
-    width: 3vw;
+    width: 2.5vw;
     margin: 1vw;
 }
 
@@ -39,6 +49,8 @@
 {
     text-align: center;
 }
+
+/* Map Google */
 
 .googleMap
 {
@@ -50,8 +62,7 @@
 
 .MapGoogle
 {
-    width: 100%;
-
+    width: 20vw;
 }
 
 
@@ -59,15 +70,14 @@
 /* === */ /* COPYRIGHT */ /* === */
 /* ----------------------------- */
 
-
 .footer-copyright
 {
-    height: 50px;
-    background-color: #db6227;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5vw;
+
+    background-color: #db6227;
+    padding: 0.3vw;
 }
 
     .footer-copyright p

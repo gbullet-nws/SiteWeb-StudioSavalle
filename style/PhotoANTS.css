@@ -1,0 +1,40 @@
+/* h2 */
+.TitreANTS
+{
+    margin-top: 8vw;
+    margin-left: 14vw;
+    margin-bottom: 4vw;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+
+
+/* grille */
+.grid-ANTS
+{
+
+}
+
+
+
+
+/* texte et images */
+
+.texteANTS 
+{
+    margin-left: 16vw;
+}
+
+.SousTitreANTS
+{
+    margin-bottom: 4vw;
+    font-size: 1.6vw;
+    color: #db6227;
+}
+
+.imageANTS
+{
+    width: 15vw;
+    float: right;
+}
