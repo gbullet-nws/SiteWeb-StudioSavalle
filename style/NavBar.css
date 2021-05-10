@@ -39,6 +39,12 @@
         border-radius: 8px;
     }
 
+    .sub-nav-btn
+    {
+        text-decoration: none;
+        color: black;
+    }
+
 /* Logo */
 
 .logo 
@@ -191,6 +197,22 @@
         font-size: 1.2vw;
     }
 
+    .prestation:hover .dropdown-item-1 
+    {
+        top: 26px;
+    }
+
 }
+
+
+@media (min-width: 1920px) 
+{
+    .prestation:hover .dropdown-item-1 
+    {
+        top: 33px;
+    }
+
+}
+
     
 

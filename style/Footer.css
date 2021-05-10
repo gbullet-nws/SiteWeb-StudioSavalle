@@ -6,23 +6,16 @@
     color: #db6227;
 }
 
-
 /* grille du footer */
 .grid-footer 
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     gap: 0px;
 }
     
 .col1-footer { grid-area: 1 / 1 / 2 / 2; }
 .col2-footer { grid-area: 1 / 2 / 2 / 3; }
-
-    .col1-footer 
-    {
-        margin-top: 1vw;
-    }
 
 /* logo footer */
 
@@ -67,13 +60,13 @@
 
 .MapGoogle
 {
-    width: 20vw;
+    width: 18vw;
 }
 
 
-/* ----------------------------- */
-/* === */ /* COPYRIGHT */ /* === */
-/* ----------------------------- */
+/* --------------------------------- */
+/* ===== */ /* COPYRIGHT */ /* ===== */
+/* --------------------------------- */
 
 .footer-copyright
 {
@@ -88,7 +81,7 @@
     .footer-copyright p
     {
         color: white;
-        font-size: 1.2vw;
+        font-size: 0.8vw;
     }
 
 .footer-copyright-1 { grid-area: 1 / 1 / 2 / 2; }
@@ -100,10 +93,43 @@
     }
 
 
-/* ---- */ /* Media Querries /* --- */ 
+/* ------------------------------------ */
+/* ---- */ /* Media Querries */ /* ---- */ 
+/* ------------------------------------ */
+
+@media (min-width: 800px) 
+{
+    .grid-footer
+    {
+        height: 24vw;
+    }
+}
+
+
+@media (min-width: 1024px) 
+{
+    .MapGoogle 
+    {
+        width: 24vw;
+    }
+}
+
+
+@media (min-width: 1280px) 
+{
+    .grid-footer
+    {
+        height: 22vw;
+    }
+}
+
 
 @media (min-width: 1440px) 
 {
+    .grid-footer
+    {
+        height: 21vw;
+    }
 
     .logo-footer
     {
@@ -125,5 +151,48 @@
     {
         width: 20vw;
     }
-
 }
+
+
+@media (min-width: 1650px)
+{
+    .grid-footer
+    {
+        height: 18vw;
+    }
+
+    .MapGoogle
+    {
+        width: 18vw;
+    }
+}
+
+
+@media (min-width: 1920px) 
+{
+    .grid-footer
+    {
+        height: 18vw;
+    }
+
+    .logo img 
+    {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .MapGoogle
+    {
+        width: 17vw;
+    }
+}
+
+
+@media (min-width: 2250px) 
+{
+    .grid-footer
+    {
+        height: 18vw;
+    }
+}
+

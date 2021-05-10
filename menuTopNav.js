@@ -1,7 +1,12 @@
+// Sticky HEADER //
+
+
 // Menu  burger //
 
-function checkIsBurger(element) => {
-    element.addEventListener('click', () => {
+function checkIsBurger(element) => 
+{
+    element.addEventListener('click', () => 
+    {
         element.classList.toggle('isBurger');
     });
 };

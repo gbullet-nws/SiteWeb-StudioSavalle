@@ -10,7 +10,6 @@
 }
 
 
-
 /* grille */
 
 .grid-ANTS 
@@ -23,14 +22,18 @@
     .col1-ANTS { grid-area: 1 / 1 / 2 / 2; }
     .col2-ANTS { grid-area: 1 / 2 / 2 / 3; }
 
-    
 
 /* texte et images */
 
-.texteANTS 
+.ZoneTexteANTS 
 {
     margin-left: 16vw;
 }
+
+    .TexteANTS
+    {
+        font-size: 1.2vw;
+    }
 
 .SousTitreANTS
 {
@@ -46,4 +49,13 @@
     display: flex;
 }
 
-    
+/* ---- */ /* Media Querries /* --- */ 
+
+@media (min-width: 1920px) 
+{
+    .TexteANTS > p
+    {
+        font-size: 1.2vw;
+    }
+
+}
