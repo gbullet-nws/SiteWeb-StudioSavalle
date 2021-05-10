@@ -2,21 +2,24 @@
 /* === */ /* NavBar */ /* === */
 /* -------------------------- */
 
-.header {
+.header 
+{
     height: 100px;
     width: 100%;
     background-color: white;
     padding: 10px 0;
 }
 
-.nav {
+.nav 
+{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.btn-nav {
+.btn-nav 
+{
     padding: 6px 50px;
     color: black;
     text-decoration: none;
@@ -30,19 +33,22 @@
     transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 
-    .btn-nav:hover {
+    .btn-nav:hover 
+    {
         border: 1px solid #db6227;
         border-radius: 8px;
     }
 
 /* Logo */
 
-.logo {
+.logo 
+{
     z-index: 900;
     position: relative;
 }
 
-.logo img {
+.logo img 
+{
     width: 12vw;
     height: 12vw;
 }
@@ -51,7 +57,8 @@
 
 /* prestation */
 
-.dropdown-item {
+.dropdown-item 
+{
     position: relative;
     z-index: 1000;
     display: none;
@@ -62,7 +69,8 @@
     background-color: white;
 }
 
-.prestation {
+.prestation 
+{
     position: relative;
 }
 
@@ -73,88 +81,116 @@
     display: block;
 }
 
-.dropdown-item > div {
+.dropdown-item > div 
+{
     position: relative;
     padding: 10px 10px;
     border-top: 1px solid #db6227;
 }
 
-.dropdown-item > div:first-child {
+.dropdown-item > div:first-child 
+{
     border-top: none;
 }
 
-.dropdown-second {
+.dropdown-second 
+{
     position: absolute;
     top: -1px;
     right: -200px;
 }
 
-.dropdown-second > div {
+.dropdown-second > div 
+{
     border-left: none;
 }
 
 /* Professionnels, particulier, scolaire, etc... */
 
-.pro, .particulier {
+.pro, .particulier 
+{
     transition: background-color 250ms ease-in-out;
     display: flex;
 }
 
-.pro:hover, .particulier:hover {
+.pro:hover, .particulier:hover 
+{
     background-color: rgba(219,98,39, 0.5);
 }
 
 /* .pro */
 
-.pro > span {
-
+.pro > span 
+{
     visibility: hidden;
     padding-left: 2%;
-
     transition: padding-left 250ms ease-in-out;
 }
 
-.pro:hover span {
+.pro:hover span 
+{
     visibility: visible;
     padding-left: 30%;
 }
 
-.pro:hover .dropdown-second {
+.pro:hover .dropdown-second 
+{
     display: block;
 }
 
 
 /* .particulier */
 
-.particulier:hover .dropdown-second {
+.particulier:hover .dropdown-second 
+{
     display: block;
 }
 
-.particulier > span {
+.particulier > span 
+{
     visibility: hidden;
     padding-left: 2%;
-
     transition: padding-left 250ms ease-in-out;
 }
 
-.particulier:hover span {
+.particulier:hover span 
+{
     visibility: visible;
     padding-left: 42%;
 }
 
 
+/*
 
-
-
-.particulier:hover .dropdown-second {
+.particulier:hover .dropdown-second 
+{
     display: block;
 }
 
-.particulier:hover .dropdown-second {
+.particulier:hover .dropdown-second 
+{
     display: block;
 }
 
+*/
 
 
+/* ---- */ /* Media Querries /* --- */ 
 
-/* .dropdown-item-1 */
+@media (min-width: 1440px) 
+{
+
+    .logo img 
+    {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .btn-nav 
+    {
+        font-size: 1.2vw;
+    }
+
+}
+    
+

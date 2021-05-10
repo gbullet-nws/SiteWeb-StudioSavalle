@@ -1,4 +1,5 @@
 /* h2 */
+
 .TitreANTS
 {
     margin-top: 8vw;
@@ -11,13 +12,18 @@
 
 
 /* grille */
-.grid-ANTS
+
+.grid-ANTS 
 {
-
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 0px;
 }
+    
+    .col1-ANTS { grid-area: 1 / 1 / 2 / 2; }
+    .col2-ANTS { grid-area: 1 / 2 / 2 / 3; }
 
-
-
+    
 
 /* texte et images */
 
@@ -28,13 +34,16 @@
 
 .SousTitreANTS
 {
-    margin-bottom: 4vw;
-    font-size: 1.6vw;
+    margin-bottom: 3vw;
+    font-size: 1.8vw;
     color: #db6227;
 }
 
 .imageANTS
 {
     width: 15vw;
-    float: right;
+    margin: 0 auto;
+    display: flex;
 }
+
+    
