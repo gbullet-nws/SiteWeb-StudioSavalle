@@ -8,13 +8,13 @@ window.onscroll = function()
     stickyHeader();
 };
 
-// secltion de l'élement HTML par son id --> Header
-var header = document.getElementsByClassName("header");
+// selection de l'élement HTML par son id -> header
+var header = document.getElementsById("NavBar");
 
 // Stocker la position offsetTop du header
 var sticky = header.offsetTop;
 
-// ajoute ou retire la class sticky à l'élément Header selon sa position sur la page
+// ajoute ou retire la class sticky à l'élément NavBar selon sa position sur la page
 function stickyHeader() 
 {
   if (window.pageYOffset > sticky) 

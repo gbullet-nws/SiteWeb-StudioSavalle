@@ -10,6 +10,11 @@
     padding: 10px 0;
 }
 
+#NavBar
+{
+
+}
+
 .nav 
 {
     display: flex;
@@ -199,7 +204,6 @@
     top: 0;
     width: 100%
 }
-
     .sticky + main
     {
     padding-top: 150px;
@@ -212,23 +216,19 @@
 
 @media (min-width: 1440px) 
 {
-
     .logo img 
     {
         width: 8vw;
         height: 8vw;
     }
-
     .btn-nav 
     {
         font-size: 1.2vw;
     }
-
     .prestation:hover .dropdown-item-1 
     {
         top: 26px;
     }
-
 }
 
 
@@ -238,7 +238,6 @@
     {
         top: 33px;
     }
-
 }
 
     

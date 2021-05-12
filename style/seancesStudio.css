@@ -1,0 +1,151 @@
+/* h2 */
+.TitreSeanceStudio
+{
+    margin-top: 5vw;
+    margin-left: 14vw;
+    margin-bottom: 4vw;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+
+/* wrapper flexbox */
+.wrapperSeanceStudio
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* texte et images */
+.containerSeanceStudio
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+    .sousTitreSeanceStudio
+    {
+        font-size: 1.8vw;
+        color: #db6227;
+        margin-bottom: 2vw;
+    }
+    .texteSeanceStudio
+    {
+        font-size: 1.2vw;
+        text-align: center;
+        width: 60%;
+    }
+
+
+.containerImagesSeanceStudio
+{
+    display: flex;
+}
+    .imageSeanceStudio
+    {
+        width: 24vw;
+        margin: 2vw;
+    }
+
+/* ---- */ /* Media Querries */ /* --- */ 
+
+@media (max-width: 425px)
+{
+    .TitreSeanceStudio 
+    {
+        font-size: 20px;
+    }
+    .sousTitreSeanceStudio 
+    {
+        font-size: 16px;
+    }
+    .texteSeanceStudio 
+    {
+        font-size: 12px;
+    }
+    .imageSeanceStudio
+    {
+        width: 300px;
+        margin: 2vw;
+    }
+    .hrSeanceStudio
+    {
+        width: 75%;
+        height: 2px;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: #db6227;
+        border: 0px;
+    }
+}
+
+
+@media (max-width: 768px) 
+{
+    .wrapperSeanceStudio 
+    {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .containerSeanceStudio
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .containerImagesSeanceStudio 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+        .imageSeanceStudio
+        {
+            width: 350px;
+            margin: 2vw;
+        }
+    
+    .TitreSeanceStudio 
+    {
+        font-size: 24px;
+    }
+    .sousTitreSeanceStudio 
+    {
+        font-size: 20px;
+    }
+    .texteSeanceStudio 
+    {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (min-width: 769px) 
+{
+    .texteSeanceStudio > p
+    {
+        font-size: 1.4vw;
+    }
+
+    .hrSeanceStudio
+    {
+        display: none;
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        margin: 0px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background-color: #db6227;
+        border: none;
+    }
+
+}
+
