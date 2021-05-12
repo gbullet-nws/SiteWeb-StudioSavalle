@@ -53,6 +53,11 @@
     position: relative;
 }
 
+    .logo:hover
+    {
+        cursor: pointer;
+    }
+
 .logo img 
 {
     width: 12vw;
@@ -121,7 +126,9 @@
 
 .pro:hover, .particulier:hover 
 {
-    background-color: rgba(219,98,39, 0.5);
+    background-color: #db6327ac;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 /* .pro */
@@ -181,7 +188,27 @@
 */
 
 
+/* -------------------------- */
+/* === */ /* Sticky */ /* === */
+/* -------------------------- */
+
+/* sticky ajouté en JS */
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+    .sticky + main
+    {
+    padding-top: 150px;
+    }
+
+
+/* -------------------------------- */    
 /* ---- */ /* Media Querries /* --- */ 
+/* -------------------------------- */
 
 @media (min-width: 1440px) 
 {

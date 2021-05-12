@@ -24,11 +24,6 @@
 
 /* Textes et photos */
 
-.textePhotoRestau {
-    /* text-align: center; */
-    margin-left: 18vw;
-}
-
 .SousTitreSection
 {
     margin-bottom: 4vw;
@@ -36,13 +31,19 @@
     color: #db6227;
 }
 
+.textePhotoRestau 
+{
+    margin-left: 18vw;
+}
+
 .image1photoRestau, .image2photoRestau
 {
+    width: 100%;
     margin-top: 4vw;
     text-align: center;
 }
 
-.PhotoRestauration 
+div > .photoRestauration 
 {
     width: 30vw;
     text-align: center;
@@ -54,5 +55,4 @@
     font-weight: bold;
     font-size: 1.6vw;
     margin-top: 1vw;
-    text-align: center;
 }
