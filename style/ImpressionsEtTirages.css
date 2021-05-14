@@ -1,0 +1,254 @@
+/* h2 */
+.TitreImpressionNetA
+{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+
+/* wrapper flexbox */
+.wrapperImpressionNetA
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+/* containers généraux */
+.containerImpressionNetA
+{
+    align-content: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+    .sousTitreImpressionNumerique
+    {
+        font-size: 22px;
+        color: #db6227;
+        margin-bottom: 2vw;
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 1vw;
+    }
+    .sousTitreTirageArgentique 
+    {
+        font-size: 22px;
+        color: #db6227;
+        margin-bottom: 2vw;
+        margin-left: 5vw;
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 1vw;
+    }
+
+.containerImagesImpressionNetA
+{
+    display: flex;
+    justify-content: center;
+}
+    .imageImpressionNetA
+    {
+        width: 25vw;
+        margin: 2vw;
+    }
+    
+
+/* subContainer impression numérique */
+.subContainerImpressionNumerique
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+    .texteImpressionNumerique
+    {
+        font-size: 20px;
+        width: 60%;
+        margin-bottom: 5vw;
+        margin-right: 2vw;
+        text-align: justify;
+    }
+    .imageTexteImpressionNumerique 
+    {
+        width: 200px;
+        padding-bottom: 2vw;
+    }
+
+
+/* subContainer tirage argentique */
+.subContainerTirageArgentique
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+    .texteTirageArgentique 
+    {
+        font-size: 20px;
+        width: 60%;
+        margin-left: 2vw;
+        text-align: justify;
+    } 
+    .imageTexteTirageArgentique 
+    {
+        height: 200px;
+        padding-bottom: 2vw;
+    }
+
+
+.marginSection
+{
+    margin-top: 100px;
+}
+
+
+.texteInformationImpressionNetA
+{
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* ---- */ /* Media Querries */ /* --- */ 
+
+@media (max-width: 768px) 
+{
+    /* wrapper et containers */
+    .wrapperImpressionNetA
+    {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .containerImpressionNetA
+    {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .subContainerImpressionNumerique
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+        .imageTexteImpressionNumerique
+        {
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+    .subContainerTirageArgentique
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+    }
+        .imageTexteTirageArgentique
+        {
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+    .containerImagesImpressionNetA
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .imageImpressionNetA
+        {
+            width: 350px;
+            margin: 2vw;
+        }
+    
+    /* titres et paragraphes */
+    .TitreImpressionNetA
+    {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .sousTitreImpressionNetA
+    {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .sousTitreTirageArgentique
+    {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .texteImpressionNumerique, .texteTirageArgentique
+    {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 425px)
+{
+    .TitreImpressionNetA
+    {
+        font-size: 22px;
+    }
+    .sousTitreImpressionNumerique, .sousTitreTirageArgentique
+    {
+        font-size: 20px;
+    }
+    .texteImpressionNumerique, .texteTirageArgentique
+    {
+        font-size: 18px;
+    }
+    .imageImpressionNetA
+    {
+        width: 300px;
+        margin: 2vw;
+    }
+    /*
+        .hrCreationGraphique
+        {
+            width: 75%;
+            height: 2px;
+            border-radius: 8px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: #db6227;
+            border: 0px;
+        }
+    */
+}
+
+
+@media (max-width: 350px)
+{
+    .imageImpressionNetA 
+    {
+        width: 275px;
+        margin: 2vw;
+    }
+    .imageTexteTirageArgentique {
+        height: 150px;
+    }
+}

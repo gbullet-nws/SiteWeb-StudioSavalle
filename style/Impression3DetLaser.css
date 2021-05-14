@@ -61,8 +61,7 @@
     {
         font-size: 20px;
         width: 60%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-left: 1vw;
     }
     .imageTexteImpression3D
     {
@@ -73,6 +72,13 @@
 
 
 .subContainerImpression3D
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.subContainerGravureLaser
 {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +99,7 @@
     }
 
 
-.texteInformationCreationGraphique
+.texteInformationImpression3D
 {
     font-size: 20px;
     text-align: center;
