@@ -1,10 +1,9 @@
 /* h2 */
 .TitreSeanceStudio
 {
-    margin-top: 5vw;
+    margin-top: 100px;
     margin-left: 14vw;
-    margin-bottom: 4vw;
-    font-size: 2vw;
+    font-size: 26px;
     font-weight: 100;
 }
 
@@ -19,6 +18,12 @@
 }
 
 
+.marginSection2
+{
+    margin-top: 100px;
+}
+
+
 /* texte et images */
 .containerSeanceStudio
 {
@@ -26,16 +31,17 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    margin-top: 40px;
 }
     .sousTitreSeanceStudio
     {
-        font-size: 1.8vw;
+        font-size: 22px;
         color: #db6227;
         margin-bottom: 2vw;
     }
     .texteSeanceStudio
     {
-        font-size: 1.2vw;
+        font-size: 20px;
         text-align: center;
         width: 60%;
     }
@@ -44,6 +50,7 @@
 .containerImagesSeanceStudio
 {
     display: flex;
+    justify-content: center;
 }
     .imageSeanceStudio
     {
@@ -51,21 +58,30 @@
         margin: 2vw;
     }
 
+
+.texteInformationSeanceStudio
+{
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin-top: 100px;
+}
+
 /* ---- */ /* Media Querries */ /* --- */ 
 
 @media (max-width: 425px)
 {
     .TitreSeanceStudio 
     {
-        font-size: 20px;
+        font-size: 22px;
     }
     .sousTitreSeanceStudio 
     {
-        font-size: 16px;
+        font-size: 20px;
     }
     .texteSeanceStudio 
     {
-        font-size: 12px;
+        font-size: 18px;
     }
     .imageSeanceStudio
     {
@@ -98,6 +114,7 @@
     {
         flex-direction: column;
         text-align: center;
+        margin-top: 50px;
     }
 
     .containerImagesSeanceStudio 
@@ -131,21 +148,7 @@
 {
     .texteSeanceStudio > p
     {
-        font-size: 1.4vw;
+        font-size: 14px;
     }
-
-    .hrSeanceStudio
-    {
-        display: none;
-        width: 0px;
-        height: 0px;
-        border-radius: 0px;
-        margin: 0px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        background-color: #db6227;
-        border: none;
-    }
-
 }
 
