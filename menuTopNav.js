@@ -1,6 +1,6 @@
-////-----------////
-// Sticky HEADER //
-////-----------////
+////-----------------------////
+// -- // Sticky HEADER // -- //
+////-----------------------////
 
 // lorsque la page est scroll, appelle la fonction stickyHeader
 window.onscroll = function() 
@@ -9,7 +9,7 @@ window.onscroll = function()
 };
 
 // selection de l'élement HTML par son id -> header
-var header = document.getElementsById("NavBar");
+var header = document.getElementById("NavBar");
 
 // Stocker la position offsetTop du header
 var sticky = header.offsetTop;
