@@ -6,8 +6,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Restauration photographies anciennes </title>
-
+        <title> Restauration de photograpgies anciennes </title>
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,98 +14,107 @@
         <link rel="stylesheet" href="style/style.css" >
         <link rel="stylesheet" href="style/NavBar.css" >
         <link rel="stylesheet" href="style/Footer.css" >
-        <link rel="stylesheet" href="style/RestaurationPhoto.css" >
+        <link rel="stylesheet" href="style/blocks.css" >
         <!-- Scripts -->
         <script src="menuTopNav.js"> </script>
-
     </head>
+
 
 
     <body>
 
         <!-- NavBar -->
-        <header class="header">
-            <nav class="nav">
-                <div class="prestation">
-                    <a href="#" class="btn-nav btn1"> Prestations </a>
+        <header id="Header" class="header" >
+            <nav id="NavBar" class="navBar">
+                <!-- Modules Photo -->
+                <div class="navMenu">
+                    <a href="#" class="btn-nav large"> Modules Photo </a>
                     <div class="dropdown-item dropdown-item-1">
-                        <div class="pro"> Professionnels <span> &#9658; </span>
+                        <div class="subNavMenu"> Photographie <span> &#9658; </span>
                             <div class="dropdown-item dropdown-second">
                                 <div> <a class="sub-nav-btn" href="corporate.html"> Corporate </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Produits dérivés </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Gravure / Découpe laser </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Impression 3D </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Création Graphique </a> </div>
+                                <div> <a class="sub-nav-btn" href="drone.html"> Drône photo / vidéo </a> </div>
+                                <div> <a class="sub-nav-btn" href="PhotoANTS.html"> Photographies d'identité ANTS </a> </div>
+                                <div> <a class="sub-nav-btn" href="seancesStudio.html"> Séance Sutdio </a> </div>
                             </div> 
                         </div>
-                        <div class="particulier"> Particuliers <span> &#9658; </span>
-                            <div class="dropdown-item dropdown-second">
-                                <div> <a class="sub-nav-btn" href="PhotographieANTS.html"> Photographies d'identité ANTS </a> </div>
-                                <div > <a class="sub-nav-btn" href="#"> Séance Sutdio </a> </div>
-                                <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Nettoyage Appareil Photo </a> </div>
-                            </div> 
-                        </div>
-                        <div> <a class="sub-nav-btn" href="drone.html"> Drône photo / vidéo </a> </div>
-                        <div> <a class="sub-nav-btn" href="#"> Gravure / Découpe laser </a> </div>
+                        <div> <a class="sub-nav-btn" href="#"> Nettoyage Appareil Photo </a> </div>
+                        <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
                     </div>
                 </div>
-                
+
+                <!-- Scolaire -->
                 <a href="#" class="btn-nav"> Scolaire </a>
 
+                <!-- Logo -->
                 <h1> 
                     <div class="logo">
                         <a href="index.html"> <img src="assets/img/logo-300.png" alt="Logo Studio Savalle Photographie"> </a>
                     </div> 
                 </h1> 
 
-                <a href="#" class="btn-nav"> Partenaires </a>
+                <!-- Personnalisation -->
+                <div class="navMenu">
+                    <a href="#" class="btn-nav btn1"> Personnalisation </a>
+                    <div class="dropdown-item dropdown-item-1">
+                        <div class="subNavMenu"> Laser / 3D <span> &#9658; </span>
+                            <div class="dropdown-item dropdown-second">
+                                <div> <a class="sub-nav-btn" href="corporate.html"> Gravures / Découpe Laser</a> </div>
+                                <div> <a class="sub-nav-btn" href="#"> Impression 3D </a> </div>
+                            </div> 
+                        </div>
+                        <div class="subNavMenu"> Tirages <span> &#9658; </span>
+                            <div class="dropdown-item dropdown-second">
+                                <div> <a class="sub-nav-btn" href="PhotoANTS.html"> Impression Numérique </a> </div>
+                                <div > <a class="sub-nav-btn" href="seancesStudio.html"> Tirage Argentique </a> </div>
+                            </div> 
+                        </div>
+                        <div class="sub-nav-btn"> Création Graphique </div>
+                        <div class="sub-nav-btn"> Produits Dérivés </div>
+                    </div>
+                </div>
 
+                <!-- Contact -->
                 <a href="#" class="btn-nav"> Contact </a>
-
             </nav>
-        </header>  
+        </header>   
 
 
         <main>
 
-            <h2 class="TitreSection"> La restauration de photographies anciennes </h2>
+            <h2 class="Title"> La restauration de photographies anciennes </h2>
 
-                <section class="Restauration-grid">
+            <section class="block-wrapper">
+                <div class="block-container">
+                    <h3 class="block-sub-title"> Remise en état de photographies anciennes </h3>
+                    <p class="block-text"> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.        <br><br>
+                        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.     <br><br>
+                        Prix de la restauration 25,00€ + le coût de l’impression (prix selon le format)   <br><br>
+                    </p>
+                </div>
+            </section>
 
-                    <div class="textePhotoRestau">
-                        <h3 class="SousTitreSection"> Remise en état de photographies anciennes </h3>
-                        <p> 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.        <br><br>
-                            Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.     <br><br>
-                            Prix de la restauration 25,00€ + le coût de l’impression (prix selon le format)   <br><br>
-                        </p>
-
+            <section class="block-wrapper">
+                <div class="block-sub-container-images">
+                    <div class="block-container-imagesNtext">
+                        <img class="image-block-type2" src="assets/img/placeholder-710x473.png" alt="Photographie avant restauration">
+                        <p class="image-sub-title"> Avant </p>
                     </div>
-
-                    <div class="image1photoRestau">
-                        <img class="photoRestauration" src="assets/img/placeholder-710x473.png" alt="Photographie avant restauration">
-                        <p class="texteSousPhotoRestau"> Avant </p>
+                    <div class="block-container-imagesNtext">
+                        <img class="image-block-type2" src="assets/img/placeholder-710x473.png" alt="Photographie avant restauration">
+                        <p class="image-sub-title"> Après </p>
                     </div>
-
-                    <div class="image2photoRestau">
-                        <img class="photoRestauration" src="assets/img/placeholder-710x473.png" alt="Photographie après restauration">
-                        <p class="texteSousPhotoRestau"> Après </p>
-                    </div>
-
-                </section>
-
-                <br>
-                <br>
-                <br>
+                </div>
+            </section>
 
         </main>
 
 
+        <!-- Footer & Copyright -->
         <footer>
 
             <hr class=".hrFooter">
-            <br>
 
             <div class="grid-footer">
 
@@ -132,9 +140,14 @@
                 <div class="col2-footer">
 
                     <div class="googleMap"> 
-                        <img class="MapGoogle" src="assets/img/MapPlaceHolder.png"> 
+                        <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1541.948143684911!2d0.6199044583243815!3d49.39064849483576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0549bb0d5467f%3A0xbb149d61f00c7ac7!2s2%20Place%20de%20la%20Mairie%2C%2027500%20Bourneville-Sainte-Croix!5e1!3m2!1sen!2sfr!4v1621340208530!5m2!1sen!2sfr" 
+                                width="300" height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                        </iframe> 
                     </div>
-                    <p></p>
 
                 </div>
 
@@ -149,6 +162,8 @@
             </div>
 
         </footer>
+
+
 
     </body>
 
