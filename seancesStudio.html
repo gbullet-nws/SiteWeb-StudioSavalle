@@ -14,104 +14,124 @@
         <link rel="stylesheet" href="style/style.css" >
         <link rel="stylesheet" href="style/NavBar.css" >
         <link rel="stylesheet" href="style/Footer.css" >
-        <link rel="stylesheet" href="style/seancesStudio.css" >
+        <link rel="stylesheet" href="style/blocks.css" >
         <!-- Scripts -->
         <script src="menuTopNav.js"> </script>
     </head>
 
     <body>
         
-        <header class="header" id="NavBar">
-            <nav class="nav">
-                <div class="prestation">
-                    <a href="#" class="btn-nav btn1"> Prestations </a>
+        <!-- NavBar -->
+        <header id="Header" class="header" >
+            <nav id="NavBar" class="navBar">
+                <!-- Modules Photo -->
+                <div class="navMenu">
+                    <a href="#" class="btn-nav large"> Modules Photo </a>
                     <div class="dropdown-item dropdown-item-1">
-                        <div class="pro"> Professionnels <span> &#9658; </span>
+                        <div class="subNavMenu"> Photographie <span> &#9658; </span>
                             <div class="dropdown-item dropdown-second">
-                                <div> <a class="sub-nav-btn" href="#"> Corporate </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Produits dérivés </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Gravure / Découpe laser </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Impression 3D </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Création Graphique </a> </div>
+                                <div> <a class="sub-nav-btn" href="corporate.html"> Corporate </a> </div>
+                                <div> <a class="sub-nav-btn" href="drone.html"> Drône photo / vidéo </a> </div>
+                                <div> <a class="sub-nav-btn" href="PhotoANTS.html"> Photographies d'identité ANTS </a> </div>
+                                <div > <a class="sub-nav-btn" href="seancesStudio.html"> Séance Sutdio </a> </div>
                             </div> 
                         </div>
-                        <div class="particulier"> Particuliers <span> &#9658; </span>
-                            <div class="dropdown-item dropdown-second">
-                                <div> <a class="sub-nav-btn" href="PhotographieANTS.html"> Photographies d'identité ANTS </a> </div>
-                                <div > <a class="sub-nav-btn" href="#"> Séance Sutdio </a> </div>
-                                <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Nettoyage Appareil Photo </a> </div>
-                            </div> 
-                        </div>
-                        <div> <a class="sub-nav-btn" href="#"> Impression 3D </a> </div>
-                        <div> <a class="sub-nav-btn" href="#"> Gravure / Découpe laser </a> </div>
+                        <div> <a class="sub-nav-btn" href="#"> Nettoyage Appareil Photo </a> </div>
+                        <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
                     </div>
                 </div>
-                
+
+                <!-- Scolaire -->
                 <a href="#" class="btn-nav"> Scolaire </a>
 
-                <div class="logo">
-                    <img src="assets/img/logo-300.png" alt="Logo Studio Savalle Photographie">
+                <!-- Logo -->
+                <h1> 
+                    <div class="logo">
+                        <a href="index.html"> <img src="assets/img/logo-300.png" alt="Logo Studio Savalle Photographie"> </a>
+                    </div> 
+                </h1> 
+
+                <!-- Personnalisation -->
+                <div class="navMenu">
+                    <a href="#" class="btn-nav btn1"> Personnalisation </a>
+                    <div class="dropdown-item dropdown-item-1">
+                        <div class="subNavMenu"> Laser / 3D <span> &#9658; </span>
+                            <div class="dropdown-item dropdown-second">
+                                <div> <a class="sub-nav-btn" href="corporate.html"> Gravures / Découpe Laser</a> </div>
+                                <div> <a class="sub-nav-btn" href="#"> Impression 3D </a> </div>
+                            </div> 
+                        </div>
+                        <div class="subNavMenu"> Tirages <span> &#9658; </span>
+                            <div class="dropdown-item dropdown-second">
+                                <div> <a class="sub-nav-btn" href="PhotoANTS.html"> Impression Numérique </a> </div>
+                                <div > <a class="sub-nav-btn" href="seancesStudio.html"> Tirage Argentique </a> </div>
+                            </div> 
+                        </div>
+                        <div> <a class="sub-nav-btn" href="CreationsGraphiques.html"> Créations graphiques </a> </div>
+                        <div> <a class="sub-nav-btn" href="#"> Produits dérivés </a> </div>
+                    </div>
                 </div>
 
-                <a href="#" class="btn-nav"> Partenaires </a>
-
+                <!-- Contact -->
                 <a href="#" class="btn-nav"> Contact </a>
-
-                
             </nav>
-        </header>  
+        </header> 
 
         <main>
         
+            <h2 class="Title"> Les séances studio </h2>
             <!-- 1ère Section -->
-            <h2 class="TitreSeanceStudio"> Les séances studio </h2>
-            <section class="wrapperSeanceStudio">
-                <div class="containerSeanceStudio">
-                    <h3 class="sousTitreSeanceStudio"> Séance Père Noël </h3>
-                    <p class="texteSeanceStudio"> 
+            <section class="block-wrapper">
+                <div class="block-container-type2">
+                    <h3 class="block-sub-title"> Séance Père Noël </h3>
+                    <p class="block-text"> 
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.                  <br><br>
                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>
                         It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.                                                            <br><br>
+                        remaining essentially unchanged.
                     </p>
                 </div>
-                <div class="containerImagesSeanceStudio">
-                    <img class="imageSeanceStudio" src="assets/img/placeholder-710x473.png" alt="Photo 1 Séance Studio">
-                    <img class="imageSeanceStudio" src="assets/img/placeholder-710x473.png" alt="Photo 2 Séance Studio">
-                    <img class="imageSeanceStudio" src="assets/img/placeholder-710x473.png" alt="Photo 3 Séance Studio">
+                <div class="block-container">
+                    <div class="block-sub-container-images">
+                        <img class="image-block" src="assets/img/placeholder-710x473.png" alt="Logo de la certification ANTS">
+                        <img class="image-block" src="assets/img/placeholder-710x473.png" alt="Logo de la certification ANTS">
+                        <img class="image-block" src="assets/img/placeholder-710x473.png" alt="Logo de la certification ANTS">
+                    </div>
                 </div>
             </section>
 
             <!-- 2ème Section -->
-            <section class="marginSection2" class="wrapperSeanceStudio">
-                <div class="containerSeanceStudio">
-                    <h3 class="sousTitreSeanceStudio"> Séance Saint Valentin </h3>
-                    <p class="texteSeanceStudio"> 
+            <section class="block-wrapper">
+                <div class="block-container-type2">
+                    <h3 class="block-sub-title"> Séance Saint Valentin </h3>
+                    <p class="block-text"> 
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.                  <br><br>
                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>
                         It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.                                                            <br><br>
+                        remaining essentially unchanged.
                     </p>
                 </div>
-                <div class="containerImagesSeanceStudio">
-                    <img class="imageSeanceStudio" src="assets/img/placeholder-710x473.png" alt="Photo 1 Séance Studio">
-                    <img class="imageSeanceStudio" src="assets/img/placeholder-710x473.png" alt="Photo 2 Séance Studio">
-                    <img class="imageSeanceStudio" src="assets/img/placeholder-710x473.png" alt="Photo 3 Séance Studio">
+                <div class="block-container">
+                    <div class="block-sub-container-images">
+                        <img class="image-block" src="assets/img/placeholder-710x473.png" alt="Logo de la certification ANTS">
+                        <img class="image-block" src="assets/img/placeholder-710x473.png" alt="Logo de la certification ANTS">
+                        <img class="image-block" src="assets/img/placeholder-710x473.png" alt="Logo de la certification ANTS">
+                    </div>
                 </div>
             </section>
 
-             <!-- 3ème Section -->
-             <section class="wrapperSeanceStudio">
-                    <p class="texteInformationSeanceStudio"> 
+            <!-- 3ème Section -->
+            <section class="block-wrapper">
+                <div class="block-container">
+                    <p class="block-text-information" class="block-text-information-border"> 
                         Pour toute demande particulière de thème de séance photo <br><br>
                         Contactez nous :                                         <br><br>
                         02 32 42 88 62                                           <br><br>
                         contact@sophiesavalle.com                                <br><br>
-                                                                                 <br><br>
                     </p>
+                </div>
             </section>
 
         </main>

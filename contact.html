@@ -39,7 +39,7 @@
                                 <div > <a class="sub-nav-btn" href="seancesStudio.html"> Séance Sutdio </a> </div>
                             </div> 
                         </div>
-                        <div> <a class="sub-nav-btn" href="#"> Nettoyage Appareil Photo </a> </div>
+                        <div> <a class="sub-nav-btn" href="nettoyageAppareils.html"> Nettoyage Appareil Photo </a> </div>
                         <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                         <div class="subNavMenu"> Laser / 3D <span> &#9658; </span>
                             <div class="dropdown-item dropdown-second">
                                 <div> <a class="sub-nav-btn" href="corporate.html"> Gravures / Découpe Laser</a> </div>
-                                <div> <a class="sub-nav-btn" href="#"> Impression 3D </a> </div>
+                                <div> <a class="sub-nav-btn" href="Impression3DetLaser.html"> Impression 3D </a> </div>
                             </div> 
                         </div>
                         <div class="subNavMenu"> Tirages <span> &#9658; </span>
@@ -70,8 +70,8 @@
                                 <div > <a class="sub-nav-btn" href="seancesStudio.html"> Tirage Argentique </a> </div>
                             </div> 
                         </div>
-                        <div class="sub-nav-btn"> Création Graphique </div>
-                        <div class="sub-nav-btn"> Produits Dérivés </div>
+                        <div> <a class="sub-nav-btn" href="CreationsGraphiques.html"> Créations graphiques </a> </div>
+                        <div> <a class="sub-nav-btn" href="#"> Produits dérivés </a> </div>
                     </div>
                 </div>
 
@@ -83,71 +83,60 @@
         <!-- Main -->
         <main>
 
-            <h2 class="Title"> Les photos d'identité ANTS </h2>
+            <div>
+                <h2 class="Title"> Contact </h2>
+                <p> 2 Place de la mairie, 27500, Bourneville Sainte Croix </p>
+                <p> 0232428862 </p>
+                <p> 0618557171 </p>
+                <p> contact@sophiesavalle.com </p>
+            </div>
+            <div>
+                <form action="action_page.php">
+              
+                  <label for="name"> Identité  </label>
+                  <input type="text" id="name" name="name" placeholder="Votre identité...">
+              
+                  <label for="tel"> Numéro de téléphone </label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Votre numéro de téléphone...">
 
-            <section class="block-wrapper">
-                <div class="block-container">
-                    <h3 class="block-sub-title"> Photos agréées ANTS </h3>
-                    <p class="block-text"> 
-                        Photos d'identité pour documents officiels, prises dans notre studio photo par notre photographe.   <br><br>
-                        Pour permis de conduire, carte d'identité, passeport, licence de sport...                           <br><br>
-                        Prix de la planche 8,00 €.                                                                          <br><br>
-                    </p>
-                </div>
-                <img class="image-block" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-            </section>
+                  <label for="address"> Lieu du projet </label>
+                  <input type="text" id="address" name="address" placeholder="Lieu du projet...">
+              
+                  <label for="state"> Département </label>
+                  <select id="state" name="state">
+                    <option value="Calvados"> Calvados (14) </option>
+                    <option value="Eure"> Eure (27) </option>
+                    <option value="Orne"> Orne (61) </option>
+                    <option value="SeineMaritime"> Seine-Maritime (76) </option>
+                    <option value="Somme"> Somme (80) </option>
+                    <option value="autreDepartement)"> autre ... </option>
+                  </select>
+              
+                  <label for="subject"> Description de votre projet : </label>
+                  <textarea id="description" name="description" placeholder="Décrivez votre projet..."> </textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
 
-            <br> <br> <br>
-
-            <section class="block-wrapper">
-                <div class="block-container">
-                    <h3 class="block-sub-title"> Photos agréées ANTS </h3>
-                    <p class="block-text"> 
-                        Photos d'identité pour documents officiels, prises dans notre studio photo par notre photographe.   <br><br>
-                        Pour permis de conduire, carte d'identité, passeport, licence de sport...                           <br><br>
-                        Prix de la planche 8,00 €.                                                                          <br><br>
-                    </p>
-                </div>
-                <div class="block-container">
-                    <div class="block-sub-container-images">
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                    </div>
-                </div>
-            </section>
-
-            <br> <br> <br>
-
-            <section class="block-wrapper">
-                <div class="block-sub-container-images">
-                    <div>
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <p> Avant </p>
-                    </div>
-                    <div>
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <p> Pendant </p>
-                    </div>
-                    <div>
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <p> Après </p>
-                    </div>
-                </div>
-            </section>
-            <br> <br> <br>
+              <iframe 
+                    src="https://calendar.google.com/calendar/embed?src=gbullet%40normandiewebschool.fr&ctz=Europe%2FParis" 
+                    style="border: 0" 
+                    width="800" 
+                    height="600" 
+                    frameborder="0" 
+                    scrolling="no">
+                </iframe>
 
         </main>
 
         <!-- Footer & Copyright -->
         <footer>
-
             <hr>
-
             <div class="grid-footer">
-
+                <!-- col 1 -->
                 <div class="col1-footer">
-
                     <img class="logo-footer" src="assets/img/logo-300.png">
                     <p class="text-footer"> 
                         Studio Savalle <br>
@@ -162,32 +151,26 @@
                         <img class="logo-rs-footer" src="assets/img/phone.svg"> 
                         <img class="logo-rs-footer" src="assets/img/instagram-logo.svg">
                     </div>
-
                 </div>
-
+                <!-- col 2 -->
                 <div class="col2-footer">
-
                     <div class="googleMap"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1541.948143684911!2d0.6199044583243815!3d49.39064849483576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0549bb0d5467f%3A0xbb149d61f00c7ac7!2s2%20Place%20de%20la%20Mairie%2C%2027500%20Bourneville-Sainte-Croix!5e1!3m2!1sen!2sfr!4v1621340208530!5m2!1sen!2sfr" 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1440.7560641846276!2d0.6207838760795941!3d49.39067157807794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e053a048a802ab%3A0x3e2b4859e3d72ebd!2sStudio%20Savalle!5e0!3m2!1sen!2sfr!4v1622459586899!5m2!1sen!2sfr" 
                                 width="300" height="300" 
-                                style="border:0;" 
+                                style="border:0; border-radius: 8px;" 
                                 allowfullscreen="" 
                                 loading="lazy">
                         </iframe>
                     </div>
-
                 </div>
-
             </div>
-
+            <!-- copyright -->
             <div>
-                <!-- Copyright -->
 				<div class="footer-copyright">
                     <p class="footer-copyright-1"> &copy; StudioSavalle.com 2016 - 2021 </p>
                     <p class="footer-copyright-2"> Politique de confidentialité &nbsp; &nbsp; &nbsp; / &nbsp; &nbsp; &nbsp; RGPD </p>
 				</div>
             </div>
-
         </footer>
 
     </body>

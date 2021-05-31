@@ -3,7 +3,7 @@
 /* -------------------------- */
 
 
-/* --- */ /* Titles */ /* --- */
+/* --- */ /* Title */ /* --- */
 
 /* h2 */
 .Title
@@ -15,7 +15,7 @@
     font-weight: 100;
 }
 
-/* --- */ /* wrapper & title */ /* --- */
+/* --- */ /* wrapper & sub-title */ /* --- */
 
 /* wrapper flexbox */
 .block-wrapper
@@ -25,6 +25,7 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 5vw;
+    align-items: center;
 }
 .block-wrapper-type2
 {
@@ -34,6 +35,14 @@
     justify-content: center;
     margin-bottom: 5vw;
     width: 60%;
+}
+.block-wrapper-type3
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
 }
 
 /* h3 */
@@ -60,6 +69,15 @@
     width: 75%;
     margin: 0 auto;
 }
+.block-container-type3, .block-container-type4
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
     /* h4 */    
     .block-sub-title
     {
@@ -68,6 +86,26 @@
         width: 80%;
         margin-bottom: 2vw;
     }
+    .block-sub-title-type2
+    {
+        font-size: 24px;
+        color: #db6227;
+        width: 80%;
+        margin-bottom: 2vw;
+    }
+    .block-sub-title-type3
+    {
+        font-size: 28px;
+        color: #db6227;
+        width: 80%;
+    }
+    .block-sub-title-type4
+    {
+        font-size: 28px;
+        color: #db6227;
+        width: 36%;
+    }
+
     .block-text
     {
         color: black;
@@ -75,18 +113,27 @@
         width: 100%;
         margin: 0 auto;
     }
+    .block-text-type2
+    {
+        color: black;
+        font-size: 18px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .block-text-type3
+    {
+        color: black;
+        font-size: 24px;
+        width: 60%;
+        margin: 0 auto;
+        text-align: justify;
+    }
     .block-text-information
     {
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
     }
-        .block-text-information-border
-        {
-            border: 2px;
-            border-color:#db6227;
-            border-radius: 8px;
-        }
 
 .block-container-images
 {
@@ -113,10 +160,30 @@
     text-align: center;
     margin: 1vw;
 }
-    .image-block
+
+.block-images
+{
+    width: 300px;
+    margin: 1vw;
+}
+
+    .image-type1, .image-type2, .image-type3, .image-type4
     {
         width: 300px;
         border-radius: 8px;
+        margin: 1vw;
+    }
+    .image-type2
+    {
+        width: 400px;
+    }
+    .image-type3
+    {
+        margin-right: 5%
+    }
+    .image-type4
+    {
+        margin-left: 5%
     }
     .image-block-type2
     {
@@ -131,11 +198,6 @@
         margin-bottom: 2vw;
         margin-top: 1vw;
     }
-    .block-images
-    {
-        width: 300px;
-        margin: 1vw;
-    }
 
 
 /* ---------------------------------------- */
@@ -146,7 +208,6 @@
 {
     height: 300px;
 }
-
 
 
 /* ----------------------------------- */
@@ -215,6 +276,19 @@
         width: 60%;
         margin-bottom: 2vw;
     }
+    .block-container-type3 
+    {
+        flex-wrap: wrap;
+    }
+    .block-container-type4
+    {
+        flex-wrap: wrap-reverse;
+    }
+    .block-sub-title-type3 
+    {
+        width: fit-content;
+        margin-bottom: 2vw;
+    }
     .block-container-images
     {
         justify-content: center;
@@ -229,7 +303,6 @@
     {
         width: 375px;
         margin: 0 auto;
-        margin: 1vw;
     }
 }
 
@@ -245,7 +318,8 @@
         width: 350px;
         margin: 1vw;
     }
-    .image-block-type2 {
+    .image-block-type2 
+    {
         width: 350px;
     }
 }
@@ -257,19 +331,26 @@
         width: 400px;
         margin: 1vw;
     }
-    .image-block-type2 {
+    .image-block-type2 
+    {
         width: 400px;
     }
 }
 
 @media (min-width: 1920px) 
 {
+    .Title 
+    {
+        margin-top: 5vw;
+        margin-bottom: 1vw;
+    }
     .image-block
     {
         width: 450px;
         margin: 1vw;
     }
-    .image-block-type2 {
+    .image-block-type2 
+    {
         width: 450px;
     }
 }

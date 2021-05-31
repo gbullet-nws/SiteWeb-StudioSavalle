@@ -170,6 +170,14 @@
 /* -------------------------------- */    
 /* ---- */ /* Media Querries /* --- */ 
 /* -------------------------------- */
+@media (min-width: 768px)
+{
+    .navMenu:hover .dropdown-item-1 
+    {
+        top: 25px;
+    }
+}
+
 @media (min-width: 1024px) 
 {
     .navMenu:hover .dropdown-item-1 
