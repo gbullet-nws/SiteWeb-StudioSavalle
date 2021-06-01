@@ -5,6 +5,9 @@
     grid-template-rows: repeat(6);
     grid-column-gap: 1%;
     grid-row-gap: 1%;
+
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
 
     .img1corporate { grid-area: 1 / 1 / 2 / 2; }
@@ -22,10 +25,7 @@
     .img13corporate { grid-area: 5 / 2 / 7 / 3; }
     .img14corporate { grid-area: 5 / 3 / 7 / 4; }
 
-        .img1corporate, .img2corporate, .img3corporate, .img4corporate,
-        .img5corporate, .img6corporate, .img7corporate, .img8corporate,
-        .img9corporate, .img10corporate, .img11corporate, .img12corporate,
-        .img13corporate, .img14corporate
+        .img-corporate
         {
-            width: 5%;
+            width: 100%;
         }

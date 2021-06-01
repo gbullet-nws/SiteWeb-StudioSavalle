@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Photographies d'identité ANTS </title>
+        <title> Blocks </title>
 
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,40 +43,36 @@
                         <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
                     </div>
                 </div>
-
                 <!-- Scolaire -->
-                <a href="#" class="btn-nav"> Scolaire </a>
-
+                <a href="Scolaire.html" class="btn-nav"> Scolaire </a>
                 <!-- Logo -->
                 <h1> 
                     <div class="logo">
                         <a href="index.html"> <img src="assets/img/logo-300.png" alt="Logo Studio Savalle Photographie"> </a>
                     </div> 
                 </h1> 
-
                 <!-- Personnalisation -->
                 <div class="navMenu">
                     <a href="#" class="btn-nav btn1"> Personnalisation </a>
                     <div class="dropdown-item dropdown-item-1">
                         <div class="subNavMenu"> Laser / 3D <span> &#9658; </span>
                             <div class="dropdown-item dropdown-second">
-                                <div> <a class="sub-nav-btn" href="corporate.html"> Gravures / Découpe Laser</a> </div>
+                                <div> <a class="sub-nav-btn" href="Impression3DetLaser.html"> Gravures / Découpe Laser</a> </div>
                                 <div> <a class="sub-nav-btn" href="Impression3DetLaser.html"> Impression 3D </a> </div>
                             </div> 
                         </div>
                         <div class="subNavMenu"> Tirages <span> &#9658; </span>
                             <div class="dropdown-item dropdown-second">
-                                <div> <a class="sub-nav-btn" href="PhotoANTS.html"> Impression Numérique </a> </div>
-                                <div > <a class="sub-nav-btn" href="seancesStudio.html"> Tirage Argentique </a> </div>
+                                <div> <a class="sub-nav-btn" href="ImpressionsEtTirages.html"> Impression Numérique </a> </div>
+                                <div > <a class="sub-nav-btn" href="ImpressionsEtTirages.html"> Tirage Argentique </a> </div>
                             </div> 
                         </div>
                         <div> <a class="sub-nav-btn" href="CreationsGraphiques.html"> Créations graphiques </a> </div>
-                        <div> <a class="sub-nav-btn" href="#"> Produits dérivés </a> </div>
+                        <div> <a class="sub-nav-btn" href="ProduitsDerives.html"> Produits dérivés </a> </div>
                     </div>
                 </div>
-
                 <!-- Contact -->
-                <a href="#" class="btn-nav"> Contact </a>
+                <div> <a href="contact.html" class="btn-nav"> Contact </a> </div>
             </nav>
         </header>  
 
@@ -84,7 +80,6 @@
         <main>
 
             <h2 class="Title"> Les photos d'identité ANTS </h2>
-
             <section class="block-wrapper">
                 <div class="block-container">
                     <h3 class="block-sub-title"> Photos agréées ANTS </h3>
@@ -94,9 +89,10 @@
                         Prix de la planche 8,00 €.                                                                          <br><br>
                     </p>
                 </div>
-                <img class="image-block" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                <div class="block-container-images">
+                    <img id="imageANTS" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                </div>
             </section>
-
             <br> <br> <br>
 
             <section class="block-wrapper">
@@ -110,9 +106,9 @@
                 </div>
                 <div class="block-container">
                     <div class="block-sub-container-images">
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                        <img class="image-type1" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                        <img class="image-type1" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                        <img class="image-type1" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
                     </div>
                 </div>
             </section>
@@ -122,15 +118,15 @@
             <section class="block-wrapper">
                 <div class="block-sub-container-images">
                     <div>
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                        <img class="image-type1" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
                         <p> Avant </p>
                     </div>
                     <div>
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                        <img class="image-type1" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
                         <p> Pendant </p>
                     </div>
                     <div>
-                        <img class="block-images" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
+                        <img class="image-type1" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
                         <p> Après </p>
                     </div>
                 </div>
@@ -149,15 +145,16 @@
                     <p class="text-footer"> 
                         Studio Savalle <br>
                         2 Place de la Mairie <br>
-                        27500 Bourneville 
+                        27500 Bourneville
                     </p>
+                    <p class=text-footer> <br> contact@sophiesavalle.com <br> </p>
                     <div class="icons-rs-footer">
-                        <img class="logo-rs-footer" src="assets/img/facebook.svg">
-                        <img class="logo-rs-footer" src="assets/img/gmail.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/linkedin.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/youtube.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/phone.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/instagram-logo.svg">
+                        <a target="_blank" href="https://www.facebook.com/studiosavalle/">                  <img class="logo-rs-footer" src="assets/img/facebook.svg">          </a>
+                        <a href="mailto:contact@sophiesavalle.com">                                         <img class="logo-rs-footer" src="assets/img/gmail.svg">             </a>
+                        <a target="_blank" href="https://fr.linkedin.com/company/studio-savalle">           <img class="logo-rs-footer" src="assets/img/linkedin.svg">          </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC4YvelwpAX__arTPsA03c_A"> <img class="logo-rs-footer" src="assets/img/youtube.svg">           </a>
+                        <a href="tel:0232428862">                                                           <img class="logo-rs-footer" src="assets/img/phone.svg">             </a>
+                        <a target="_blank" href="https://www.instagram.com/studiosavalle/?hl=fr">           <img class="logo-rs-footer" src="assets/img/instagram-logo.svg">    </a> 
                     </div>
                 </div>
                 <!-- col 2 -->

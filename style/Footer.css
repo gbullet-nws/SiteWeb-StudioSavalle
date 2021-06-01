@@ -19,6 +19,7 @@ hr
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
+    align-items: center;
 }
     
 .col1-footer 
@@ -64,6 +65,10 @@ hr
 {
     text-align: center;
 }
+    .icons-rs-footer > a
+    {
+        text-decoration: none;
+    }
 
 /* Map Google */
 

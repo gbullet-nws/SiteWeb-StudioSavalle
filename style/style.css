@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* General */
-
 /* GENERAL */
 
-* {
+* 
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -31,6 +30,7 @@ p {
     color: black;
 }
 
+/* Youtube */
 
 .embedVideo
 {
@@ -55,15 +55,18 @@ p {
         transition: 350ms;
     }
 
+/* Block d'information page du drône */
+
 .background-block-information
 {
-    background-image: url("../../assets/img/backgroundChamps copie.png");
+    background-image: url("../../assets/img/backgroundChamps.png");
     background-position: center;
     background-size: cover;
     background-color: rgb(229, 229, 229);
     height: 500px;
 }
 
+/* Media Querries */
 
 @media ( min-width: 1440px)
 {
