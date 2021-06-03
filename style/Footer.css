@@ -77,11 +77,6 @@ hr
     display: block;
     text-align: center;
 }
-    .googleMap > p
-    {
-        font-size: 16px;
-    }
-
 .MapGoogle
 {
     width: 300px;
