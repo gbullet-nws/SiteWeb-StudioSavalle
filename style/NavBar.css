@@ -52,6 +52,10 @@
         {
             color: #db6227;
         }
+    .nav-btn-tablet-large
+    {
+        display: none;
+    }
 
 /* Logo */
 .logo 
@@ -174,17 +178,30 @@
 /* -------------------------------- */
 @media (max-width: 768px)
 {
+    /* cache le menu de nav pour desktop ¨*/
     .header
     {
         display: none;
     }
 }
+
 @media (min-width: 769px)
 {   
+    /* disparition menu burger */
     .menu-topNav-burger
     {
         display: none;
     }
+    /* apparition des btn de nav pour tablette en paysage */
+    .nav-btn-tablet-large
+    {
+        display: block;
+    }
+    .nav-btn-desktop
+    {
+        display: none;
+    }
+    /* taille des boutons du menu nav header */
     .navMenu:hover .dropdown-item-1 
     {
         top: 25px;
@@ -197,9 +214,17 @@
     {
         top: 30px;
     }
+    .nav-btn-desktop
+    {
+        display: block;
+    }
     .btn-nav 
     {
         font-size: 20px;
+    }
+    .nav-btn-tablet-large
+    {
+        display: none;
     }
 }
 
