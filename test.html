@@ -24,6 +24,7 @@
 
         <!-- NavBar -->
         <header>
+
             <!-- Navbar desktop & horizontal tablet -->
             <div id="Header" class="header">
                 <nav id="NavBar" class="navBar sticky" role="navigation">
@@ -83,9 +84,11 @@
                     <div> <a href="contact.html" class="btn-nav"> Contact </a> </div>
                 </nav>
             </div>
+
              <!-- Navbar mobile & vertical tablet ( menu burger )-->
              <nav class="menu-topNav-burger sticky" role="navigation">
                 <div id="menuToggle">
+                    <h1 class="nom-menu-navigation-burger"> Studio Savalle </h1> 
                     <!-- Hidden checkbox is used as click reciever, use the :checked selector on it. -->
                     <input type="checkbox" />
                     <!-- Some spans to act as a hamburger. -->
@@ -256,6 +259,25 @@
                 </div>
             </section>
             <br> <br> <br>
+
+
+            <button onclick="clickToGoTop()" id="scrollTopButon" title=" Retourner en haut "> Top </button>
+
+
+            <div class="carousel-wrapper">
+                <div class="carousel">
+
+                  <img class="carousel__photo initial" src="http://placekitten.com/1600/900">
+                  <img class="carousel__photo" src="http://placekitten.com/g/1600/900">
+                  <img class="carousel__photo" src="http://placekitten.com/1600/900">
+                  <img class="carousel__photo" src="http://placekitten.com/g/1600/900">
+                  <img class="carousel__photo" src="http://placekitten.com/1600/900">
+                  
+                  <div class="carousel__button--next"></div>
+                  <div class="carousel__button--prev"></div>
+            
+                </div>
+            </div>
 
         </main>
 
