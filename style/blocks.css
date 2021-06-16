@@ -205,6 +205,11 @@
             width: 400px;
             height: 400px;
         }
+        .image-type6
+        {
+            height: 300px;
+            width: auto;
+        }
 
     .image-block
     {
@@ -224,16 +229,6 @@
         margin-bottom: 2vw;
         margin-top: 1vw;
     }
-
-
-/* ---------------------------------------- */
-/* ---- */ /* Individual Elements */ /* --- */ 
-/* ---------------------------------------- */
-
-#imageANTS
-{
-    height: 300px;
-}
 
 
 /* ----------------------------------- */
@@ -263,6 +258,16 @@
     {
         margin-bottom: 4vw;
     }
+    .block-sub-title-type4 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .block-text-type3
+    {
+        text-align: center;
+    }
     .image-block
     {
         width: 300px;
@@ -270,6 +275,20 @@
     .image-block-type2 
     {
         width: 300px;
+    }
+    .image-type2
+    {
+        width: 300px;
+    }
+    .image-type6
+    {
+        width:auto;
+        height: 300px;
+    }
+    .image-type6-2
+    {
+        width: 300px;
+        height: auto;
     }
 }
 
