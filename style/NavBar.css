@@ -156,7 +156,7 @@
 /* ---- */ /* Media Querries /* --- */ 
 /* -------------------------------- */
 
-@media (max-width: 768px)
+@media (max-width: 820px)
 {
     /* cache le menu de nav pour desktop ¨*/
     .header
@@ -165,7 +165,7 @@
     }
 }
 
-@media (min-width: 769px)
+@media (min-width: 821px)
 {   
     /* disparition menu burger */
     .menu-topNav-burger
