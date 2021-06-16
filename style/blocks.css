@@ -8,7 +8,7 @@
 /* h2 */
 .Title
 {
-    margin-top: 10vw;
+    margin-top: 4vw;
     margin-bottom: 4vw;
     text-align: center;
     font-size: 30px;
@@ -52,7 +52,6 @@
     margin-bottom: 5vw;
 }
 
-/* h3 */
 .block-title
 {
     font-size: 1.8vw;
@@ -90,8 +89,6 @@
         justify-content: center;
     }
 
-    /* h4 */   
-
     .block-sub-title
     {
         font-size: 24px;
@@ -106,7 +103,7 @@
         margin-bottom: 2vw;
         text-align: center;
     }
-    .block-sub-title-type3
+    .block-sub-title-type3, .block-sub-title-type5
     {
         font-size: 28px;
         color: #db6227;
@@ -117,6 +114,10 @@
         font-size: 28px;
         color: #db6227;
         width: 36%;
+    }
+    .block-sub-title-type5
+    {
+        margin-bottom: 1.5vw;
     }
 
     /* text in block container */
@@ -141,6 +142,7 @@
             width: 60%;
             margin: 0 auto;
             text-align: justify;
+            margin-bottom: 1.5vw;
         }
         .block-text-information
         {
@@ -209,6 +211,16 @@
         {
             height: 300px;
             width: auto;
+        }
+        .image-type6-2
+        {
+            width: 400px;
+            height: auto;
+        }
+        .image-type6-3
+        {
+            width: auto;
+            height: 250px;
         }
 
     .image-block
@@ -282,7 +294,7 @@
     }
     .image-type6
     {
-        width:auto;
+        width: auto;
         height: 300px;
     }
     .image-type6-2
@@ -404,7 +416,7 @@
 {
     .Title 
     {
-        margin-top: 5vw;
+        margin-top: 4vw;
         margin-bottom: 1vw;
     }
     .image-block

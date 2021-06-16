@@ -299,6 +299,11 @@
    color: #232323;
    transition: color 0.3s ease;
  }
+
+ #menuToggle > a .orange
+ {
+     color: #db6227;
+ }
  
  #menuToggle a:hover
  {
