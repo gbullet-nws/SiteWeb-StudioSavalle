@@ -61,7 +61,7 @@
 
 /* --- */ /* block-container , subTitle, text, images */ /* --- */
 
-.block-container, .block-container-type4, .block-container-type5
+.block-container, .block-container-type5
 {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +75,7 @@
         width: 75%;
         margin: 0 auto;
     }
-    .block-container-type3, .block-container-type4
+    .block-container-type3, .block-container-type4, .block-container-type4-2
     {
         display: flex;
         flex-wrap: wrap;
@@ -83,6 +83,10 @@
         margin: 0 auto;
         align-items: center;
         justify-content: center;
+    }
+    .block-container-type4-2
+    {
+        margin-bottom: 2vw;
     }
     .block-container-type5
     {
@@ -103,11 +107,12 @@
         margin-bottom: 2vw;
         text-align: center;
     }
-    .block-sub-title-type3, .block-sub-title-type5
+    .block-sub-title-type3
     {
         font-size: 28px;
         color: #db6227;
         width: 80%;
+        margin-bottom: 2vw;
     }
     .block-sub-title-type4
     {
@@ -117,6 +122,9 @@
     }
     .block-sub-title-type5
     {
+        font-size: 28px;
+        color: #db6227;
+        width: 80%;
         margin-bottom: 1.5vw;
     }
 
@@ -190,7 +198,7 @@
         justify-content: center;
     }
 
-    .image-type1, .image-type2, .image-type3, .image-type4, .image-type5
+    .image-type1, .image-type2, .image-type4, .image-type5
     {
         width: 300px;
         border-radius: 8px;
@@ -203,10 +211,15 @@
         .image-type3
         {
             margin-right: 5%;
+            height: 300px;
         }
-        .image-type4
+        .image-type4, .image-type4-2
         {
             margin-left: 5%;
+        }
+        .image-type4-2
+        {
+            width: 400px;
         }
         .image-type5
         {
@@ -285,6 +298,8 @@
     .block-text-type3
     {
         text-align: center;
+        margin-bottom: 10vw;
+        margin-top: 10vw;
     }
     .image-block
     {
@@ -320,7 +335,7 @@
 {
     .Title
     {
-        margin-top: 15vw;
+        margin-top: 100px;
         margin-bottom: 8vw;
         text-align: center;
         font-size: 30px;
@@ -330,7 +345,7 @@
     {
         flex-direction: column;
         align-content: center;
-        margin-bottom: 10vw;
+        margin-bottom: 20vw;
     }
     .block-container
     {
@@ -380,10 +395,6 @@
     .block-container-type2 
     {
         width: 90%;
-    }
-    .Title
-    {
-        margin-top: 2vw;
     }
     .image-block
     {
