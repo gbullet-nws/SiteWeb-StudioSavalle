@@ -258,13 +258,9 @@
 /* === */ /* NavBar Tablet & Mobile */ /* === */
 /* ------------------------------------------ */
 
-.mobile-margin-top
-{
-  margin-top: 100px;
-}
 .menuBurger-studioSavalle
 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: underline;
     color: #db6227;
@@ -398,10 +394,8 @@
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
-   
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
-   
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
@@ -412,11 +406,21 @@
  }
  
  /*
-  * And let's slide it in from the left
+  * slide it in from the left
   */
  #menuToggle input:checked ~ ul
  {
    transform: none;
+ }
+
+
+
+ @media (max-width: 820px)
+ {
+    .mobile-margin-top
+    {
+      margin-top: 100px;
+    }
  }
 
 
