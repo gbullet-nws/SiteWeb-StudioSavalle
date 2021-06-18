@@ -412,6 +412,10 @@
         margin-top: 60px;
         margin-bottom: 30px;
     }
+    .block-wrapper
+    {
+        margin-bottom: 1vw;
+    }
     .block-container-type2 
     {
         width: 90%;
