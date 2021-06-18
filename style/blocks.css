@@ -26,6 +26,8 @@
     justify-content: center;
     margin-bottom: 1vw;
     align-items: center;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
 .block-wrapper-type2
 {
@@ -278,16 +280,29 @@
     }
     .block-sub-title 
     {
-        margin-bottom: 4vw;
+        padding-bottom: 4vw;
+        margin: 0 auto;
+    }
+    .block-text
+    {
+        width: 90%;
     }
 }
 
 
 @media (max-width: 460px) 
 {
+    .block-wrapper
+    {
+        margin-bottom: 20vw;
+    }
     .block-container-type2
     {
         margin-bottom: 4vw;
+    }
+    .block-sub-title
+    {
+        width: 95%;
     }
     .block-sub-title-type4 
     {
@@ -300,6 +315,7 @@
         text-align: center;
         margin-bottom: 10vw;
         margin-top: 10vw;
+        width: 90%;
     }
     .image-block
     {
@@ -331,7 +347,7 @@
 }
 
 
-@media (max-width: 768px) 
+@media (min-width: 461px)   /* till 768px */
 {
     .Title
     {
@@ -345,7 +361,7 @@
     {
         flex-direction: column;
         align-content: center;
-        margin-bottom: 20vw;
+        margin-bottom: 5vw;
     }
     .block-container
     {
@@ -369,7 +385,6 @@
     }
     .block-sub-title-type3 
     {
-        width: fit-content;
         margin-bottom: 2vw;
     }
     .block-container-images
@@ -390,8 +405,13 @@
 }
 
 
-@media (max-width: 1024px) 
+@media (min-width: 769px) /* till 1024px */
 {
+    .Title 
+    {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
     .block-container-type2 
     {
         width: 90%;
@@ -412,11 +432,11 @@
     }
     .image-type3
     {
-        margin-right: 0;
+        margin-right: 50px;
     }
     .image-type4
     {
-        margin-left: 0;
+        margin-left: 50px;
     }
     
 }
