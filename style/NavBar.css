@@ -279,6 +279,14 @@
     color: #db6227;
     font-size: 28px;
 }
+
+.background-mobile-navbar
+{
+    background-color: white;
+    height: 70px;
+    border-bottom: 1px solid #db6227;
+}
+
 .menuBurger-category
 {
     font-size: 30px;
@@ -286,7 +294,7 @@
     text-decoration: underline;
 }
  
-#menuToggle
+#burgerMenuToggle
 {
   display: block;
   position: relative;
@@ -294,31 +302,30 @@
   z-index: 1000;
   -webkit-user-select: none;
   user-select: none;
-  /* background-color: white; */
   padding-bottom: 20px;
-  height: 550px;
+  height: 560px;
   overflow-y: scroll;
   -webkit-overflow-scrolling:touch; // mobile safari
 }
  
- #menuToggle a
+ #burgerMenuToggle a
  {
    text-decoration: none;
    color: #232323;
    transition: color 0.3s ease;
  }
 
- #menuToggle > a .orange
+ #burgerMenuToggle > a .orange
  {
      color: #db6227;
  }
  
- #menuToggle a:hover
+ #burgerMenuToggle a:hover
  {
    color: #db6227;
  }
  
- #menuToggle input
+ #burgerMenuToggle input
  {
     display: block;
     width: 40px;
@@ -336,7 +343,7 @@
  /*
   * Hamburger 
   */
- #menuToggle span
+ #burgerMenuToggle span
  {
     display: block;
     width: 33px;
@@ -358,12 +365,12 @@
                 opacity 0.55s ease;
  }
  
- #menuToggle span:first-child
+ #burgerMenuToggle span:first-child
  {
    transform-origin: 0% 0%;
  }
  
- #menuToggle span:nth-last-child(2)
+ #burgerMenuToggle span:nth-last-child(2)
  {
    transform-origin: 0% 100%;
  }
@@ -371,7 +378,7 @@
  /* 
   * Transform all the slices of hamburger into a crossmark.
   */
- #menuToggle input:checked ~ span
+ #burgerMenuToggle input:checked ~ span
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
@@ -380,15 +387,15 @@
  /*
   * Hide the middle one.
   */
- #menuToggle input:checked ~ span:nth-last-child(3)
+ #burgerMenuToggle input:checked ~ span:nth-last-child(3)
  {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
  }
  /*
-  * The last one should go the other direction
+  * The last one go the other direction
   */
- #menuToggle input:checked ~ span:nth-last-child(2)
+ #burgerMenuToggle input:checked ~ span:nth-last-child(2)
  {
    transform: rotate(-45deg) translate(0, -1px);
  }
@@ -396,11 +403,11 @@
  /*
   * Make this absolute positioned at the top left of the screen
   */
- #menu
+ #burgerMenu
  {
    position: absolute;
    top: -35px;
-   width: 300px;
+   width: 100%;
    padding: 50px;
    text-align: start;
    background: #ededed;
@@ -413,7 +420,7 @@
    overflow: scroll;
  }
  
- #menu li
+ #burgerMenu li
  {
    padding: 3px 0;
    font-size: 22px;
@@ -422,7 +429,7 @@
  /*
   * slide it in from the left
   */
- #menuToggle input:checked ~ ul
+ #burgerMenuToggle input:checked ~ ul
  {
    transform: none;
  }
@@ -435,7 +442,7 @@
 
 @media (min-width: 325px)
 {
-    #menu
+    #burgerMenu
     {
         width: 100%;
     }
