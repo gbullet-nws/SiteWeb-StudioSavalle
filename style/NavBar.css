@@ -305,7 +305,7 @@
   padding-bottom: 20px;
   height: 560px;
   overflow-y: scroll;
-  -webkit-overflow-scrolling:touch; // mobile safari
+  -webkit-overflow-scrolling:touch; /* mobile safari */
 }
  
  #burgerMenuToggle a
@@ -440,6 +440,8 @@
 /* ---- */ /* Media Querries /* --- */ 
 /* -------------------------------- */
 
+/* WIDTH */ 
+
 @media (min-width: 325px)
 {
     #burgerMenu
@@ -456,6 +458,22 @@
     }
  }
 
+ /* HEIGHT */
+ @media (min-height: 600px)
+ {
+    #burgerMenuToggle
+    {
+        height: 600px;
+    }
+ }
+
+ @media (min-height: 700px)
+ {
+    #burgerMenuToggle
+    {
+        height: 700px;
+    }
+ }
 
     
 

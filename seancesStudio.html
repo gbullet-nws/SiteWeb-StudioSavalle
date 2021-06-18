@@ -21,7 +21,7 @@
 
     <body>
         
-         <!-- NavBar -->
+        <!-- NavBar -->
         <header>
             <!-- Navbar desktop & horizontal tablet -->
             <div id="Header" class="header">
@@ -83,8 +83,8 @@
                 </nav>
             </div>
             <!-- Navbar mobile & vertical tablet ( menu burger )-->
-            <nav class="menu-topNav-burger sticky" role="navigation">
-                <div id="menuToggle">
+            <nav class="menu-topNav-burger sticky background-mobile-navbar" role="navigation">
+                <div id="burgerMenuToggle">
                     <h1 class="nom-menu-navigation-burger orange"> <a class="orange" href="index.html"> Studio Savalle </a> </h1> 
                     <!-- Hidden checkbox = click reciever | use the :checked selector on it. -->
                     <input type="checkbox" />
@@ -93,7 +93,7 @@
                     <span> </span>
                     <span> </span>
                     <!-- The menu has to be inside of the button. -->
-                    <ul id="menu">
+                    <ul id="burgerMenu">
                         <!-- Accueil -->
                         <a href="index.html"> 
                             <h2 class="menuBurger-studioSavalle">    
@@ -105,7 +105,7 @@
                             <li>    
                                 <strong> Modules Photo </strong>
                                 <a href="#">
-                                    <li>
+                                    <li class="menuBurger-margin-bottom">
                                         <ul>
                                             <a href="corporate.html"> 
                                                 <li>
@@ -147,7 +147,7 @@
                             <li>
                                 <strong> Scolaire </strong> 
                                 <a href="Scolaire.html">
-                                    <li>    
+                                    <li class="menuBurger-margin-bottom">    
                                         • Photographie Scolaire   
                                     </li> 
                                 </a>
@@ -157,23 +157,23 @@
                         <a href="#"> 
                             <li>    
                                 <strong> Personnalisation  </strong>      
-                                <ul>
-                                    <a href="Impression3DetLaser"> 
+                                <ul class="menuBurger-margin-bottom">
+                                    <a href="Impression3DetLaser.html"> 
                                         <li>
                                             • Laser / 3D
                                         </li>
                                     </a>
-                                    <a href="#"> 
+                                    <a href="ImpressionsEtTirages.html"> 
                                         <li>
                                             • Tirages numériques & argentiques
                                         </li>
                                     </a>
-                                    <a href="#"> 
+                                    <a href="CreationsGraphiques.html"> 
                                         <li>
                                             • Créations graphiques
                                         </li>
                                     </a>
-                                    <a href="#"> 
+                                    <a href="ProduitsDerives.html"> 
                                         <li>
                                             • Produits dérivés
                                         </li>
@@ -195,11 +195,13 @@
                     </ul>
                 </div>
             </nav>
-        </header> 
+        </header>
 
         <main>
-        
+            
+            <!-- Titre Page -->
             <h2 class="Title mobile-margin-top-100px" class="mobile-margin-top-100px"> Les séances studio </h2>
+
             <!-- 1ère Section -->
             <section class="block-wrapper">
                 <div class="block-container-type2">
@@ -253,6 +255,9 @@
                     </p>
                 </div>
             </section>
+
+             <!-- SCROLL TOP BUTTON -->
+             <button onclick="clickToGoTop()" id="scrollTopButon" title=" Retourner en haut "> ⬆ </button>
 
         </main>
 
