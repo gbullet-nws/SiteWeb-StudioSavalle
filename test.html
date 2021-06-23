@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Studio Savalle </title>
+        <!-- favicon -->
+        <link rel="icon" href="assets/img/logo-32.png">
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -17,6 +19,9 @@
         <link rel="stylesheet" href="style/test.css">
         <!-- Scripts -->
         <script src="menuTopNav.js"> </script>
+        <!-- SLICK -->
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>       
     </head>
 
 
@@ -86,7 +91,9 @@
             <!-- Navbar mobile & vertical tablet ( menu burger )-->
             <nav class="menu-topNav-burger sticky background-mobile-navbar" role="navigation">
                 <div id="burgerMenuToggle">
-                    <h1 class="nom-menu-navigation-burger orange"> <a class="orange" href="index.html"> Studio Savalle </a> </h1> 
+                    <h1 class="nom-menu-navigation-burger orange"> 
+                        <a class="orange" href="index.html"> Studio Savalle </a> 
+                    </h1> 
                     <!-- Hidden checkbox = click reciever | use the :checked selector on it. -->
                     <input type="checkbox" />
                     <!-- spans will be use for the hamburger -->
@@ -202,6 +209,7 @@
         <!-- Main -->
         <main>
 
+            <!-- Exemple 1 section -->
             <h2 class="Title"> Les photos d'identité ANTS </h2>
             <section class="block-wrapper">
                 <div class="block-container">
@@ -216,8 +224,12 @@
                     <img id="imageANTS" src="assets/img/imgANTS.png" alt="Logo de la certification ANTS">
                 </div>
             </section>
+
             <br> <br> <br>
 
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
+
+            <!-- Exemple 2 section -->
             <section class="block-wrapper">
                 <div class="block-container">
                     <h3 class="block-sub-title"> Photos agréées ANTS </h3>
@@ -237,9 +249,16 @@
             </section>
 
             <br> <br> <br>
+
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
+
+            <br> <br> <br>
             <p id="ancreTEST"> ancre de test qui doit apparaitre </p>
             <br> <br> <br>
 
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
+
+            <!-- Exemple 3 section -->
             <section class="block-wrapper">
                 <div class="block-sub-container-images">
                     <div>
@@ -256,27 +275,183 @@
                     </div>
                 </div>
             </section>
+
             <br> <br> <br>
+
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
 
             <!-- SCROLL TOP BUTTON -->
             <button onclick="clickToGoTop()" id="scrollTopButon" title=" Retourner en haut "> ⬆ </button>
 
-            <!-- 
-            <div class="carousel-wrapper">
-                <div class="carousel">
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
 
-                  <img class="carousel__photo initial" src="http://placekitten.com/1600/900">
-                  <img class="carousel__photo" src="http://placekitten.com/g/1600/900">
-                  <img class="carousel__photo" src="http://placekitten.com/1600/900">
-                  <img class="carousel__photo" src="http://placekitten.com/g/1600/900">
-                  <img class="carousel__photo" src="http://placekitten.com/1600/900">
-                  
-                  <div class="carousel__button--next"></div>
-                  <div class="carousel__button--prev"></div>
-            
+            <!-- Exemple fiche produit -->
+            <section class="margin-produit wrapper-produit">
+                    <div class="container-produit">
+                        <img class="image-produit" src="assets/img/produitsDerives/stylo.jpg" alt="Stylo personnalisable">
+                    </div>
+                    <div class="container-produit">
+                        <h3> Stylo noir </h3>
+                        <p> 10,00 €</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <p class="description-produit"> Description de l'article : </p>
+                        <br>
+                        <p> 
+                            Stylo à encore noire 
+                            <br> <br>
+                            Photo scolaire de l'enfant incrustée à l'intérieur du manche du stylo 
+                            <br> <br>
+                            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet <br>
+                            ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet lorem <br>
+                            ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
+                        </p>
+                        <br>
+                        <div>
+                            <button type="button" class="bouton-produit"> Ajouter au panier </button>
+                            <input type="text" id="quantiteProduit" value="0"> </input>
+                            <button type="button" class="bouton-produit bouton-produit-plus" onclick="augmenterQuantite()"> + </button>
+                            <button type="button" class="bouton-produit bouton-produit-moins" onclick="reduireQuantite()"> - </button>
+                            <span> Quantité </span>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- exemple script fiche produit = boutons de quantité -->
+            <script>
+                var quantiteProduit = 0;
+                function augmenterQuantite() 
+                {
+                    document.getElementById('quantiteProduit').value = ++quantiteProduit;
+                }
+                function reduireQuantite() 
+                {
+                    if (quantiteProduit === 0)
+                    {
+                        quantiteProduit = 0 ;
+                    }
+                    else
+                    {
+                        document.getElementById('quantiteProduit').value = --quantiteProduit;
+                    }
+                }
+            </script>
+
+            <br> <br> <br> <br>
+
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
+
+            <!-- Exemple caroussel SLICK -->
+            <section class="slick-slider-wrapper">
+                <div class="slider-1-slick-container slider-slick-1">
+                    <div class="slider-1-slick-items">
+                        <img class="slider-1-slick-images" src="assets/img/ImpressionNumerique.png" alt="">
+                    </div>
+                    <div class="slider-1-slick-items">
+                        <img class="slider-1-slick-images" src="assets/img/Imprimante3D.png" alt="">
+                    </div>
+                    <div class="slider-1-slick-items">
+                        <img class="slider-1-slick-images" src="assets/img/GravureLaser.png" alt="">
+                    </div>
+                    <div class="slider-1-slick-items">
+                        <img class="slider-1-slick-images" src="assets/img/ANTS.png" alt="">
+                    </div>
                 </div>
-            </div>
-            -->
+            </section>
+
+            <!-- scripts pour SLICK -->
+            <script type="text/javascript" src="assets/jquery/jquery-1.11.0.min.js"> </script>
+            <script type="text/javascript" src="assets/jquery/jquery-migrate-1.2.1.min.js"> </script>
+            <script type="text/javascript" src="assets/slick/slick.min.js"> </script>
+            <script type="text/javascript" src="assets/slick/slick.min.js"> </script>
+            <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"> </script> -->
+            <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"> </script> -->
+
+            <!-- script SLICK slider 1 -->
+            <script type="text/javascript">
+
+                $(function()
+                {
+                    $('.slider-slick-1').slick(
+                    {
+                        centerMode: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        arrows: true,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        dots: true,
+                        centerPadding: '60px',
+                        variableWidth: true,
+                        variableheight: true,
+                        mobileFirst: true,
+                        responsive:
+                        [
+                            {
+                                breakpoint: 1024,
+                                settings: 
+                                {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                    centerPadding: '0px',
+                                    infinite: true,
+                                    dots: true
+                                }
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: 
+                                {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 300,
+                                settings: 
+                                {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                }
+                            }
+                        ],
+                    });
+                });
+
+                $(window).resize(function()
+                {
+                    $('.slider-slick-1')[0].slick.refresh();
+                });
+
+            </script>
+
+            <br> <br> <br> <br>
+
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
+
+             <!-- exemple boutons séparés en diagonale -->
+            <ul class="boutons-diagonale-container">
+                <li class="bouton-diagonale-1">
+                    <a class="bouton-diagonale" href="#">
+                      Photographie Scolaire
+                    </a>
+                </li>
+                <li class="bouton-diagonale-2">
+                    <a class="bouton-diagonale" href="#">
+                      Photographie Studio
+                    </a>
+                </li>
+            </ul>
+
+            <br> <br> <br> <br>
+
+            <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
+
+
+            <br> <br> <br> <br>
+
 
         </main>
 
@@ -324,6 +499,7 @@
 				</div>
             </div>
         </footer>
+
 
     </body>
 

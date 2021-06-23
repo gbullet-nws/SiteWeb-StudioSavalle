@@ -200,7 +200,7 @@
         justify-content: center;
     }
 
-    .image-type1, .image-type2, .image-type4, .image-type5
+    .image-type1, .image-type2, .image-type4
     {
         width: 300px;
         border-radius: 8px;
@@ -227,6 +227,8 @@
         {
             width: 400px;
             height: 400px;
+            margin: 0.3vw;
+            border-radius: 8px;
         }
         .image-type6
         {
