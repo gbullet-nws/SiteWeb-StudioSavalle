@@ -14,7 +14,7 @@ function resizeBurgerMenu()
     }
     else 
     {
-        resizingBurgerMenu.classList.add("burgerMenu-fullHeight")    ;
+        resizingBurgerMenu.classList.add("burgerMenu-fullHeight") ;
     }
 }
 

@@ -5,28 +5,6 @@
 //Get the button:
 scrollTopButon = document.getElementById("scrollTopButon");
 
-/*
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() 
-{
-    scrollToTopFunction();
-};
-
-function scrollToTopFunction() 
-{
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-  {
-    scrollTopButon.style.display = "block";
-  } 
-  else 
-  {
-    scrollTopButon.style.display = "none";
-  }
-}
-
-*/
-
 // When the user clicks on the button, scroll to the top of the document
 function clickToGoTop() 
 {
@@ -36,3 +14,27 @@ function clickToGoTop()
 
 /* ------------------------------------------ *//* ------------------------------------------ */
 /* ------------------------------------------ *//* ------------------------------------------ */
+
+ ////----------------------------------------////
+// //----// increase product quantity //----// //
+ ////---------------------------------------////
+
+// Fonction d'ajout de quantité --> fiche produit
+
+let quantiteProduit = 0;
+
+function augmenterQuantite() 
+{
+    document.getElementById('quantiteProduit').value = ++quantiteProduit;
+}
+function reduireQuantite() 
+{
+    if (quantiteProduit === 0)
+    {
+        quantiteProduit = 0 ;
+    }
+    else
+    {
+        document.getElementById('quantiteProduit').value = --quantiteProduit;
+    }
+}
