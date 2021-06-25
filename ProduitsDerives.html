@@ -87,10 +87,12 @@
             </div>
             <!-- Navbar mobile & vertical tablet ( menu burger )-->
             <nav class="menu-topNav-burger sticky background-mobile-navbar" role="navigation">
-                <div id="burgerMenuToggle">
-                    <h1 class="nom-menu-navigation-burger orange"> <a class="orange" href="index.html"> Studio Savalle </a> </h1> 
+                <div id="burgerMenuToggle" class="">
+                    <h1 class="nom-menu-navigation-burger orange"> 
+                        <a class="orange" href="index.html"> Studio Savalle </a> 
+                    </h1> 
                     <!-- Hidden checkbox = click reciever | use the :checked selector on it. -->
-                    <input type="checkbox" />
+                    <input id="menuBurger-button" type="checkbox" class="opener" onclick="resizeBurgerMenu();"/>
                     <!-- spans will be use for the hamburger -->
                     <span> </span>
                     <span> </span>
@@ -472,12 +474,16 @@
             </div>
             <!-- copyright -->
             <div>
-				<div class="footer-copyright">
+                <div class="footer-copyright">
                     <p class="footer-copyright-1"> &copy; StudioSavalle.com 2016 - 2021 </p>
                     <p class="footer-copyright-2"> Politique de confidentialité &nbsp; &nbsp; &nbsp; / &nbsp; &nbsp; &nbsp; RGPD </p>
-				</div>
+                </div>
             </div>
         </footer>
+
+        <!-- Scripts JS -->
+        <script type="text/javascript" src="menuTopNav.js"> </script>
+        <script type="text/javascript" src="util.js"> </script>
 
     </body>
 

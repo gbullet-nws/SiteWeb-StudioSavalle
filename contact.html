@@ -86,10 +86,12 @@
             </div>
             <!-- Navbar mobile & vertical tablet ( menu burger )-->
             <nav class="menu-topNav-burger sticky background-mobile-navbar" role="navigation">
-                <div id="burgerMenuToggle">
-                    <h1 class="nom-menu-navigation-burger orange"> <a class="orange" href="index.html"> Studio Savalle </a> </h1> 
+                <div id="burgerMenuToggle" class="">
+                    <h1 class="nom-menu-navigation-burger orange"> 
+                        <a class="orange" href="index.html"> Studio Savalle </a> 
+                    </h1> 
                     <!-- Hidden checkbox = click reciever | use the :checked selector on it. -->
-                    <input type="checkbox" />
+                    <input id="menuBurger-button" type="checkbox" class="opener" onclick="resizeBurgerMenu();"/>
                     <!-- spans will be use for the hamburger -->
                     <span> </span>
                     <span> </span>
@@ -197,7 +199,7 @@
                     </ul>
                 </div>
             </nav>
-        </header>  
+        </header>
 
         <!-- Main -->
         <main>
@@ -217,10 +219,11 @@
             </FORM>
 
 
-            <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-            <section>
-                <div>
+            <section class="contact-wrapper">
+
+                <div class="contact-container">
                     <!-- Titre page -->
                     <h2> Contact </h2>
                     <br> 
@@ -239,6 +242,7 @@
                             <br>
                         </div>
                         <!-- icons réseaux sociaux -->
+                        <!--
                         <div class="icons-rs-contact">
                             <p> <img class="logo-rs-contact" src="assets/img/facebook.svg"> Facebook </p>
                             <br>
@@ -248,23 +252,20 @@
                             <br>
                             <p> <img class="logo-rs-contact" src="assets/img/instagram-logo.svg"> Instagram </p>
                         </div>
-                    </div>
-
-                    <div>
-
+                        -->
                     </div>
 
                     <!-- préférence de réponse et copie mail -->
                     <div>
                         <p> 
-                            Préférence de réponse <span> * </span> : 
+                            <strong> Préférence de réponse </strong> <span> * </span> : 
                             <input type="checkbox" id="mail" name="mail" value="mail" unchecked>
                             <label for="mail"> Mail </label>
                             <input type="checkbox" id="telephone" name="telephone" value="telephone" unchecked>
                             <label for="telephone"> Téléphone </label> 
                         </p>
                         <p> 
-                            Recevoir une copie par mail : 
+                            <strong> Recevoir une copie par mail : </strong>
                             <input type="checkbox" id="copieMail" name="copieMail" value="copieMail" unchecked>
                             <label for="copieMail"> Copie par mail </label>
                         </p>
@@ -272,30 +273,35 @@
                             <span> * </span> = champs obligatoires
                         </p>
                     </div>
-
+                </div>
                     <!-- établissement scolaire / professionnel / autre -->
-                    <div>
-                        <p>
-                            Vous êtes <span> * </span> :
-                            <br>
-                            <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
-                            <label for="huey"> Un établissement scolaire </label>
-                            <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
-                            <label for="huey"> Un professionnel </label>
-                            <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
-                            <label for="huey"> Autre </label>
-                        </p>
+                <div class="contact-sub-container">
+                    <p>
+                        Vous êtes <span> * </span> :
+                        <br>
+                        <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
+                        <label for="huey"> Un établissement scolaire </label>
+                        <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
+                        <label for="huey"> Un professionnel </label>
+                        <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
+                        <label for="huey"> Autre </label>
+                    </p>
+                    <br>
+                    <div class="contact-container-inputs">
                         <div>
-                            <input type="text" name="text1" value=" Nom / Prénom" >
-                            <input type="text" name="text1" value=" Adresse mail ">
-                            <input type="text" name="text1" value=" Numéro de téléphone">
-                            <input type="text" name="text1" value=" Ville ">
-                            <textarea name="textarea"> Votre message... </textarea>
-                            <input type="submit" name="Submit" value=" Envoyer "> 
+                            <input class="contact-input" type="text" name="text1" value=" Nom / Prénom" >
+                            <input class="contact-input" type="text" name="text1" value=" Adresse mail ">
                         </div>
-                    
+                        <div>
+                            <input class="contact-input" type="text" name="text1" value=" Numéro de téléphone">
+                            <input class="contact-input" type="text" name="text1" value=" Ville ">
+                        </div>
+                        <textarea class="contact-textarea" name="textarea"> Votre message... </textarea>
+                        <br><br>
+                        <input class="contact-submit-button" type="submit" name="Submit" value=" Envoyer "> 
                     </div>
                 </div>
+
             </section>
 
 
@@ -305,7 +311,7 @@
         </main>
 
         <!-- Footer & Copyright -->
-        <footer>
+        <footer class="footer-StudioSavalle">
             <div class="grid-footer">
                 <!-- col 1 -->
                 <div class="col1-footer">
@@ -313,22 +319,25 @@
                     <p class="text-footer"> 
                         Studio Savalle <br>
                         2 Place de la Mairie <br>
-                        27500 Bourneville 
+                        27500 Bourneville
                     </p>
+                    <p class=text-footer> <br> contact@sophiesavalle.com <br> </p>
                     <div class="icons-rs-footer">
-                        <img class="logo-rs-footer" src="assets/img/facebook.svg">
-                        <img class="logo-rs-footer" src="assets/img/gmail.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/linkedin.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/youtube.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/phone.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/instagram-logo.svg">
+                        <a target="_blank" href="https://www.facebook.com/studiosavalle/">                  <img class="logo-rs-footer" src="assets/img/facebook.svg">          </a>
+                        <a href="mailto:contact@sophiesavalle.com">                                         <img class="logo-rs-footer" src="assets/img/gmail.svg">             </a>
+                        <a target="_blank" href="https://fr.linkedin.com/company/studio-savalle">           <img class="logo-rs-footer" src="assets/img/linkedin.svg">          </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC4YvelwpAX__arTPsA03c_A"> <img class="logo-rs-footer" src="assets/img/youtube.svg">           </a>
+                        <a href="tel:0232428862">                                                           <img class="logo-rs-footer" src="assets/img/phone.svg">             </a>
+                        <a target="_blank" href="https://www.instagram.com/studiosavalle/?hl=fr">           <img class="logo-rs-footer" src="assets/img/instagram-logo.svg">    </a> 
                     </div>
                 </div>
                 <!-- col 2 -->
                 <div class="col2-footer">
                     <div class="googleMap"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1440.7560641846276!2d0.6207838760795941!3d49.39067157807794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e053a048a802ab%3A0x3e2b4859e3d72ebd!2sStudio%20Savalle!5e0!3m2!1sen!2sfr!4v1622459586899!5m2!1sen!2sfr" 
-                                width="300" height="300" 
+                        <iframe class="MapGoogle"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1440.7560641846276!2d0.6207838760795941!3d49.39067157807794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e053a048a802ab%3A0x3e2b4859e3d72ebd!2sStudio%20Savalle!5e0!3m2!1sen!2sfr!4v1622459586899!5m2!1sen!2sfr" 
+                                width="500" 
+                                height="300" 
                                 style="border:0; border-radius: 8px;" 
                                 allowfullscreen="" 
                                 loading="lazy">
@@ -338,12 +347,15 @@
             </div>
             <!-- copyright -->
             <div>
-				<div class="footer-copyright">
+                <div class="footer-copyright">
                     <p class="footer-copyright-1"> &copy; StudioSavalle.com 2016 - 2021 </p>
                     <p class="footer-copyright-2"> Politique de confidentialité &nbsp; &nbsp; &nbsp; / &nbsp; &nbsp; &nbsp; RGPD </p>
-				</div>
+                </div>
             </div>
         </footer>
+
+        <script type="text/javascript" src="menuTopNav.js"> </script>
+        <script type="text/javascript" src="util.js"> </script>
 
     </body>
 

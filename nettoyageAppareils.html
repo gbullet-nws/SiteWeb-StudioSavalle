@@ -85,10 +85,12 @@
             </div>
             <!-- Navbar mobile & vertical tablet ( menu burger )-->
             <nav class="menu-topNav-burger sticky background-mobile-navbar" role="navigation">
-                <div id="burgerMenuToggle">
-                    <h1 class="nom-menu-navigation-burger orange"> <a class="orange" href="index.html"> Studio Savalle </a> </h1> 
+                <div id="burgerMenuToggle" class="">
+                    <h1 class="nom-menu-navigation-burger orange"> 
+                        <a class="orange" href="index.html"> Studio Savalle </a> 
+                    </h1> 
                     <!-- Hidden checkbox = click reciever | use the :checked selector on it. -->
-                    <input type="checkbox" />
+                    <input id="menuBurger-button" type="checkbox" class="opener" onclick="resizeBurgerMenu();"/>
                     <!-- spans will be use for the hamburger -->
                     <span> </span>
                     <span> </span>
@@ -231,7 +233,7 @@
 
 
         <!-- Footer & Copyright -->
-        <footer>
+        <footer class="footer-StudioSavalle">
             <div class="grid-footer">
                 <!-- col 1 -->
                 <div class="col1-footer">
@@ -254,8 +256,10 @@
                 <!-- col 2 -->
                 <div class="col2-footer">
                     <div class="googleMap"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1440.7560641846276!2d0.6207838760795941!3d49.39067157807794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e053a048a802ab%3A0x3e2b4859e3d72ebd!2sStudio%20Savalle!5e0!3m2!1sen!2sfr!4v1622459586899!5m2!1sen!2sfr" 
-                                width="300" height="300" 
+                        <iframe class="MapGoogle"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1440.7560641846276!2d0.6207838760795941!3d49.39067157807794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e053a048a802ab%3A0x3e2b4859e3d72ebd!2sStudio%20Savalle!5e0!3m2!1sen!2sfr!4v1622459586899!5m2!1sen!2sfr" 
+                                width="500" 
+                                height="300" 
                                 style="border:0; border-radius: 8px;" 
                                 allowfullscreen="" 
                                 loading="lazy">
@@ -265,12 +269,16 @@
             </div>
             <!-- copyright -->
             <div>
-				<div class="footer-copyright">
+                <div class="footer-copyright">
                     <p class="footer-copyright-1"> &copy; StudioSavalle.com 2016 - 2021 </p>
                     <p class="footer-copyright-2"> Politique de confidentialité &nbsp; &nbsp; &nbsp; / &nbsp; &nbsp; &nbsp; RGPD </p>
-				</div>
+                </div>
             </div>
         </footer>
+
+        <!-- Scripts JS -->
+        <script type="text/javascript" src="menuTopNav.js"> </script>
+        <script type="text/javascript" src="util.js"> </script>
 
 
 

@@ -227,3 +227,72 @@
   text-align: center;
   transform: skewx(0deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-wrapper
+{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 30px;
+
+  border: 1px solid #db6227;
+  border-radius: 8px;
+}
+
+.contact-container
+{
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+
+.contact-sub-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container-inputs
+{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contact-input
+{
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #db6227;
+  margin: 0.5vw;
+  width: 300px;
+}
+.contact-textarea
+{
+  padding: 50px;
+  border-radius: 8px;
+  border: 1px solid #db6227;
+}
+
+.contact-submit-button
+{
+  color: #db6227;
+}

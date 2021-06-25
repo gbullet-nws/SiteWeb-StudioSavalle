@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="style/Footer.css">
         <link rel="stylesheet" href="style/blocks.css">
         <link rel="stylesheet" href="style/test.css">
-        <!-- Scripts -->
-        <script src="menuTopNav.js"> </script>
+        <!-- Scripts JS -->
+        <script type="text/javascript" src="menuTopNav.js"> </script>
+        <script type="text/javascript" src="util.js"> </script>
         <!-- SLICK -->
         <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>       
@@ -90,12 +91,12 @@
             </div>
             <!-- Navbar mobile & vertical tablet ( menu burger )-->
             <nav class="menu-topNav-burger sticky background-mobile-navbar" role="navigation">
-                <div id="burgerMenuToggle">
+                <div id="burgerMenuToggle" class="">
                     <h1 class="nom-menu-navigation-burger orange"> 
-                        <a class="orange" href="index.html"> Studio Savalle </a> 
+                        <a id="StudioSavalleMenu" class="orange" href="index.html"> Studio Savalle </a> 
                     </h1> 
                     <!-- Hidden checkbox = click reciever | use the :checked selector on it. -->
-                    <input type="checkbox" />
+                    <input id="menuBurger-button" type="checkbox" class="opener" onclick="resizeBurgerMenu();"/>
                     <!-- spans will be use for the hamburger -->
                     <span> </span>
                     <span> </span>
@@ -204,6 +205,28 @@
                 </div>
             </nav>
         </header>
+
+        <!--
+        <script>
+            
+            // resize the <div> of the burgerMenu when the opener button is clicked
+            // becasue the menuBurger <div> is over all others if not changed in .js
+            let resizingBurgerMenu = document.getElementById("burgerMenuToggle") ;
+
+            function resizeBurgerMenu() 
+            {
+                if (resizingBurgerMenu.classList.contains("burgerMenu-fullHeight")) 
+                {
+                    resizingBurgerMenu.classList.remove("burgerMenu-fullHeight") ;
+                }
+                else 
+                {
+                    resizingBurgerMenu.classList.add("burgerMenu-fullHeight")    ;
+                }
+            }
+    
+        </script>
+        -->
       
 
         <!-- Main -->
@@ -431,7 +454,7 @@
 
             <!-- / ------ / / ------ / / ------ / / ------ / / ------ / / ------ / -->
 
-             <!-- exemple boutons séparés en diagonale -->
+            <!-- exemple boutons séparés en diagonale -->
             <ul class="boutons-diagonale-container">
                 <li class="bouton-diagonale-1">
                     <a class="bouton-diagonale" href="#">
