@@ -239,7 +239,7 @@
 
 
 
-
+/* CONTACT */
 
 .contact-wrapper
 {
@@ -253,7 +253,7 @@
   padding: 30px;
 
   border: 1px solid #db6227;
-  border-radius: 8px;
+  border-radius: 40px;
 }
 
 .contact-container
@@ -269,6 +269,32 @@
   flex-direction: column;
 }
 
+/* informations de contact */
+.contact-hr
+{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-align-text
+{
+
+}
+
+.contact-address
+{
+  /* margin-left: 38px; */
+}
+
+/* Vous êtes */
+.contact-raisonSocial
+{
+  text-align: center;
+}
+
+
+/* formulaire */
 .contact-container-inputs
 {
   display:flex;
@@ -287,12 +313,28 @@
 }
 .contact-textarea
 {
-  padding: 50px;
+  width: 600px;
+  height: 150px;
   border-radius: 8px;
   border: 1px solid #db6227;
+  margin: 0 auto;
 }
 
 .contact-submit-button
 {
-  color: #db6227;
+  color: white;
+  background-color: #db6227;
+  border: 1px solid #db6227;
+  border-radius: 8px;
+  padding: 8px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px)
+{
+  .contact-sub-container 
+  {
+    margin: 0 auto;
+  }
 }

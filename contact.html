@@ -231,14 +231,16 @@
                     <div>
                         <!-- informations de contact -->
                         <div>
-                            <p> <img class="logo-rs-contact" src="assets/img/phone.svg"> &nbsp; 2 place de la mairie, 
-                            <br> 27 500, Bourneville Sainte Croix </p>
+                            <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/iconLocalisation.svg"> 
+                                &nbsp; 2 place de la mairie, 27 500, 
+                                <br> Bourneville Sainte Croix 
+                            </p>
                             <br>
-                            <p> <img class="logo-rs-contact" src="assets/img/phone.svg"> &nbsp; 0232428862 </p>
+                            <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/phone.svg"> &nbsp; 0232428862 </p>
                             <br>
-                            <p> <img class="logo-rs-contact" src="assets/img/phone.svg"> &nbsp; 0677770560 </p>
+                            <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/iconSmartphone.svg"> &nbsp; 0677770560 </p>
                             <br>
-                            <p> <img class="logo-rs-contact" src="assets/img/gmail.svg"> &nbsp; contact@sophiesavalle.com </p>
+                            <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/gmail.svg"> &nbsp; contact@sophiesavalle.com </p>
                             <br>
                         </div>
                         <!-- icons réseaux sociaux -->
@@ -255,20 +257,24 @@
                         -->
                     </div>
 
+                    <hr class="contact-hr">
+
                     <!-- préférence de réponse et copie mail -->
                     <div>
                         <p> 
-                            <strong> Préférence de réponse </strong> <span> * </span> : 
+                            <strong> Préférence de réponse </strong> <span class="rouge"> * </span> : 
                             <input type="checkbox" id="mail" name="mail" value="mail" unchecked>
                             <label for="mail"> Mail </label>
                             <input type="checkbox" id="telephone" name="telephone" value="telephone" unchecked>
                             <label for="telephone"> Téléphone </label> 
                         </p>
+                        <br>
                         <p> 
                             <strong> Recevoir une copie par mail : </strong>
                             <input type="checkbox" id="copieMail" name="copieMail" value="copieMail" unchecked>
                             <label for="copieMail"> Copie par mail </label>
                         </p>
+                        <br>
                         <p> 
                             <span> * </span> = champs obligatoires
                         </p>
@@ -276,8 +282,8 @@
                 </div>
                     <!-- établissement scolaire / professionnel / autre -->
                 <div class="contact-sub-container">
-                    <p>
-                        Vous êtes <span> * </span> :
+                    <p class="contact-raisonSocial">
+                        <strong> Vous êtes </strong> <span class="rouge"> * </span> :
                         <br>
                         <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
                         <label for="huey"> Un établissement scolaire </label>
@@ -289,20 +295,22 @@
                     <br>
                     <div class="contact-container-inputs">
                         <div>
-                            <input class="contact-input" type="text" name="text1" value=" Nom / Prénom" >
-                            <input class="contact-input" type="text" name="text1" value=" Adresse mail ">
+                            <input class="contact-input" type="text" name="text1" placeholder=" Nom / Prénom *"> 
+                            <input class="contact-input" type="text" name="text1" placeholder=" Adresse mail *">
                         </div>
                         <div>
-                            <input class="contact-input" type="text" name="text1" value=" Numéro de téléphone">
-                            <input class="contact-input" type="text" name="text1" value=" Ville ">
+                            <input class="contact-input" type="text" name="text1" placeholder=" Numéro de téléphone *"> 
+                            <input class="contact-input" type="text" name="text1" placeholder=" Ville *"> 
                         </div>
                         <textarea class="contact-textarea" name="textarea"> Votre message... </textarea>
-                        <br><br>
+                        <br>
                         <input class="contact-submit-button" type="submit" name="Submit" value=" Envoyer "> 
                     </div>
                 </div>
 
             </section>
+
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 
             <!-- SCROLL TOP BUTTON -->
