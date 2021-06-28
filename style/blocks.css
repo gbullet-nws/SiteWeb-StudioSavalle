@@ -434,6 +434,14 @@
         width: 375px;
         margin: 0 auto;
     }
+    .image-type3
+    {
+        height: 200px;
+    }
+    .image-type4 
+    {
+        width: 200px;
+    }
 }
 
 
