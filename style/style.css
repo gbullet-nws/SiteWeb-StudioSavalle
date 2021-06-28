@@ -510,6 +510,26 @@ hr
         }
 }
 
+/* -------------------------------------------- */
+/* ----------- */ /* SCOLAIRE */ /* ----------- */ 
+/* -------------------------------------------- */
+.underline-style
+{
+    text-decoration: underline;
+}
+    .underline-style:hover
+    {
+        text-decoration: none;
+    }
+
+/* -------------------------------------------- */
+/* ----------- */ /* SCOLAIRE */ /* ----------- */ 
+/* -------------------------------------------- */
+.image-restaurationPhotographie
+{
+    width: 250px;
+}
+
 /* ---------------------------------------- */
 /* ----------- */ /* ANTS */ /* ----------- */ 
 /* ---------------------------------------- */
@@ -533,6 +553,24 @@ hr
     background-color: rgb(229, 229, 229);
     height: 500px;
 }
+
+
+/* ------------------------------------------------------------------ */
+/* ----------- */ /* SEANCE PHOTO ( séance studio ) */ /* ----------- */ 
+/* ------------------------------------------------------------------ */
+
+.grid-seancePhoto
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+    .col1-seancePhoto { grid-area: 1 / 1 / 3 / 2; }
+    .col2-seancePhoto { grid-area: 1 / 2 / 2 / 3; }
+    .col3-seancePhoto { grid-area: 2 / 2 / 3 / 3; }
 
 /* ------------------------------------------------- */
 /* ----------- */ /* FICHE PRODUIT */ /* ----------- */ 
