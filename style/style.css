@@ -452,7 +452,18 @@ hr
 .ZoneLogoYoutube
 {
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
+    position: relative;
+    z-index: 899;
+}
+
+.youtubeBanner
+{
+    width: 40%;
+}
+.youtubeBanner-mobile
+{
+    display: none;
 }
 
 .logoYoutubeRouge
@@ -460,11 +471,47 @@ hr
     width: 100px;
     margin-bottom: 20px;
 }
-    .logoYoutubeRouge:hover
+    .logoYoutubeBanner
     {
-        transform: scale(2);
+        position: absolute;
+        z-index: 900;
+        left: 265px;
+        bottom: 118px;
+        width: 46px;
+    }
+    .logoYoutubeBanner:hover
+    {
+        transform: scale(1.5);
         transition: 350ms;
     }
+
+@media (max-width: 800px)
+{
+    .youtubeBanner
+    {
+        display: none;
+    }
+    .logoYoutubeRouge
+    {
+        display: none;
+    }
+    .logoYoutubeBanner
+    {
+        display: none;
+    }
+
+    .youtubeBanner-mobile
+    {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        transition: 350ms;
+    }
+        .youtubeBanner-mobile:hover
+        {
+            transform: scale(1.5);
+        }
+}
 
 /* ---------------------------------------- */
 /* ----------- */ /* ANTS */ /* ----------- */ 
