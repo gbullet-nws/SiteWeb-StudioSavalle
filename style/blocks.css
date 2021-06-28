@@ -153,7 +153,7 @@
         {
             color: black;
             font-size: 24px;
-            width: 60%;
+            width: 70%;
             margin: 0 auto;
             text-align: justify;
             margin-bottom: 1.5vw;
@@ -217,15 +217,16 @@
         .image-type3
         {
             margin-right: 5%;
-            height: 200px;
+            height: 300px;
         }
-        .image-type4, .image-type4-2
+        .image-type4
         {
             margin-left: 5%;
-            width: 200px;
+            width: 300px;
         }
         .image-type4-2
         {
+            margin-left: 5%;
             width: 200px;
         }
         .image-type5
