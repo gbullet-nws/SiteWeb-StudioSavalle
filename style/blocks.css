@@ -367,7 +367,6 @@
     }
 }
 
-
 @media (min-width: 461px)   /* till 768px */
 {
     .Title
@@ -377,12 +376,6 @@
         text-align: center;
         font-size: 30px;
         font-weight: 100;
-    }
-    .block-wrapper
-    {
-        flex-direction: column;
-        align-content: center;
-        margin-bottom: 5vw;
     }
     .block-container
     {
@@ -424,6 +417,15 @@
     }
 }
 
+@media (max-width: 768px)
+{
+    .block-wrapper
+    {
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 5vw;
+    }
+}
 
 @media (min-width: 769px) /* till 1024px */
 {

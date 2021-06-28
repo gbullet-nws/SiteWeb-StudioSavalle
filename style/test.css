@@ -26,6 +26,11 @@
   margin: 0;
 }
 
+.margin-slider-items
+{
+  margin: 1vw;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1400px)
 {
