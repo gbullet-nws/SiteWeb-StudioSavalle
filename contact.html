@@ -37,13 +37,13 @@
                                     <div> <a class="sub-nav-btn" href="corporate.html"> Corporate </a> </div>
                                     <div> <a class="sub-nav-btn" href="drone.html"> Drône photo / vidéo </a> </div>
                                     <div> <a class="sub-nav-btn" href="PhotoANTS.html"> Photographies d'identité ANTS </a> </div>
-                                    <div > <a class="sub-nav-btn" href="seancesStudio.html"> Séance Sutdio </a> </div>
+                                    <div > <a class="sub-nav-btn" href="seancesStudio.html"> Séance studio </a> </div>
                                 </div> 
                             </div>
                             <div class="nav-btn-tablet-large"> <a class="sub-nav-btn" href="corporate.html"> Corporate </a> </div>
                             <div class="nav-btn-tablet-large"> <a class="sub-nav-btn" href="drone.html"> Drône photo / vidéo </a> </div>
                             <div class="nav-btn-tablet-large"> <a class="sub-nav-btn" href="PhotoANTS.html"> Photographies d'identité ANTS </a> </div>
-                            <div class="nav-btn-tablet-large"> <a class="sub-nav-btn" href="seancesStudio.html"> Séance Sutdio </a> </div>
+                            <div class="nav-btn-tablet-large"> <a class="sub-nav-btn" href="seancesStudio.html"> Séance studio </a> </div>
                             <div> <a class="sub-nav-btn" href="nettoyageAppareils.html"> Nettoyage Appareil Photo </a> </div>
                             <div> <a class="sub-nav-btn" href="RestaurationPhoto.html"> Restauration photographies anciennes </a> </div>
                         </div>
@@ -53,7 +53,7 @@
                     <!-- Logo -->
                     <h1> 
                         <div class="logo">
-                            <a href="index.html"> <img src="assets/img/logo-300.png" alt="Logo Studio Savalle Photographie"> </a>
+                            <a href="index.html"> <img src="assets/img/logo-300.png" alt="Studio Savalle Photographie Logo"> </a>
                         </div> 
                     </h1> 
                     <!-- Personnalisation -->
@@ -202,9 +202,7 @@
         </header>
 
         <!-- Main -->
-        <main>
-
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <main class="contact-margin">
 
             <section class="contact-wrapper">
 
@@ -217,8 +215,9 @@
                         <!-- informations de contact -->
                         <div>
                             <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/iconLocalisation.svg"> 
-                                &nbsp; 2 place de la mairie, 27 500, 
-                                <br> Bourneville Sainte Croix 
+                                &nbsp; 2 place de la mairie, 
+                                <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 27 500, 
+                                <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bourneville Sainte Croix 
                             </p>
                             <br>
                             <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/phone.svg"> &nbsp; 0232428862 </p>
@@ -228,18 +227,6 @@
                             <p class="contact-align-text"> <img class="logo-rs-contact" src="assets/img/gmail.svg"> &nbsp; contact@sophiesavalle.com </p>
                             <br>
                         </div>
-                        <!-- icons réseaux sociaux -->
-                        <!--
-                        <div class="icons-rs-contact">
-                            <p> <img class="logo-rs-contact" src="assets/img/facebook.svg"> Facebook </p>
-                            <br>
-                            <p> <img class="logo-rs-contact" src="assets/img/linkedin.svg">  Linkedin </p>
-                            <br>
-                            <p> <img class="logo-rs-contact" src="assets/img/youtube.svg"> Youtube </p>
-                            <br>
-                            <p> <img class="logo-rs-contact" src="assets/img/instagram-logo.svg"> Instagram </p>
-                        </div>
-                        -->
                     </div>
 
                     <hr class="contact-hr">
@@ -248,14 +235,16 @@
                     <div>
                         <p> 
                             <strong> Préférence de réponse </strong> <span class="rouge"> * </span> : 
-                            <input type="checkbox" id="mail" name="mail" value="mail" unchecked>
+                            <br>
+                            <input type="checkbox" id="mail" name="mail" value="mail" unchecked required>
                             <label for="mail"> Mail </label>
-                            <input type="checkbox" id="telephone" name="telephone" value="telephone" unchecked>
+                            <input type="checkbox" id="telephone" name="telephone" value="telephone" unchecked required>
                             <label for="telephone"> Téléphone </label> 
                         </p>
                         <br>
                         <p> 
-                            <strong> Recevoir une copie par mail : </strong>
+                            <strong> Recevoir une copie par mail: </strong>
+                            <br>
                             <input type="checkbox" id="copieMail" name="copieMail" value="copieMail" unchecked>
                             <label for="copieMail"> Copie par mail </label>
                         </p>
@@ -267,35 +256,39 @@
                 </div>
                     <!-- établissement scolaire / professionnel / autre -->
                 <div class="contact-sub-container">
+                    <hr class="contact-hr-display">
                     <p class="contact-raisonSocial">
                         <strong> Vous êtes </strong> <span class="rouge"> * </span> :
                         <br>
-                        <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
-                        <label for="huey"> Un établissement scolaire </label>
-                        <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
-                        <label for="huey"> Un professionnel </label>
-                        <input type="checkbox" id="huey" name="drone" value="huey" unchecked>
-                        <label for="huey"> Autre </label>
+                        <br>
+                        <input type="checkbox" id="scolaire" name="raisonSocial" value="etablissementScolaire" unchecked required>
+                        <label for="scolaire"> Un établissement scolaire </label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="professionnel" name="professionnel" value="professionnel" unchecked required>
+                        <label for="professionnel"> Un professionnel </label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="autre" name="autre" value="autre" unchecked required>
+                        <label for="autre"> Autre </label>
                     </p>
                     <br>
                     <div class="contact-container-inputs">
-                        <div>
-                            <input class="contact-input" type="text" name="text1" placeholder=" Nom / Prénom *"> 
-                            <input class="contact-input" type="text" name="text1" placeholder=" Adresse mail *">
+                        <div class="contact-form-inputs">
+                            <input class="contact-input" type="text" name="nomPrénom" placeholder=" Nom / Prénom *" required> 
+                            <input class="contact-input" type="text" name="adresseMail" placeholder=" Adresse mail *" required>
                         </div>
-                        <div>
-                            <input class="contact-input" type="text" name="text1" placeholder=" Numéro de téléphone *"> 
-                            <input class="contact-input" type="text" name="text1" placeholder=" Ville *"> 
+                        <div class="contact-form-inputs">
+                            <input class="contact-input" type="text" name="telephone" placeholder=" Numéro de téléphone *" required> 
+                            <input class="contact-input" type="text" name="ville" placeholder=" Ville *" required> 
                         </div>
-                        <textarea class="contact-textarea" name="textarea"> Votre message... </textarea>
+                        <textarea class="contact-textarea" name="textarea" placeholder=" Votre message... * " required></textarea>
                         <br>
                         <input class="contact-submit-button" type="submit" name="Submit" value=" Envoyer "> 
                     </div>
                 </div>
 
             </section>
-
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 
             <!-- SCROLL TOP BUTTON -->
