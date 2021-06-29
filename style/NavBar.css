@@ -167,6 +167,10 @@
 
 @media (min-width: 821px)
 {   
+    .header 
+    {
+        height: 75px;
+    }
     /* disparition menu burger */
     .menu-topNav-burger
     {
@@ -190,6 +194,10 @@
 
 @media (min-width: 1024px) 
 {
+    .header 
+    {
+        height: 90px;
+    }
     .navMenu:hover .dropdown-item-1 
     {
         top: 30px;
@@ -210,6 +218,10 @@
 
 @media (min-width: 1440px) 
 {
+    .header 
+    {
+        height: 100px;
+    }
     .logo img 
     {   
         width: 6vw;

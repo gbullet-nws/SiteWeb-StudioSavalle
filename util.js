@@ -51,8 +51,8 @@ $(function()
     $('.slider-slick-1').slick({
         centerMode: true,
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 2,
         arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
