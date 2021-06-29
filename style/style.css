@@ -956,6 +956,14 @@ hr
     border-radius: 8px;
 }
 
+@media (max-width: 768px)
+{
+    .grid-seancePhoto 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* ------------------------- *//* ------------------------- *//* ------------------------- */
 
