@@ -359,6 +359,12 @@ hr
 /* MEDIA QUERIES */
 @media (max-width: 768px)
 {
+    .banner-presentation-boutique,
+    .banner-presentation-seance-studio,
+    .banner-presentation-scolaire
+    {
+        height: 350px;
+    }
     .img-equipe-landing-page {
         display: flex;
         margin: 0 auto;
@@ -371,14 +377,8 @@ hr
 }
 @media (max-width: 400px)
 {
-    .banner-presentation-boutique
-    {
-        height: 200px;
-    }
-    .banner-presentation-seance-studio
-    {
-        height: 200px;
-    }
+    .banner-presentation-boutique,
+    .banner-presentation-seance-studio,
     .banner-presentation-scolaire
     {
         height: 200px;
