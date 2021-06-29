@@ -265,7 +265,7 @@
 
     .image-block
     {
-        border-radius: 8px;
+        border-radius: 16px;
     }
         .image-block-type2
         {
@@ -472,7 +472,7 @@
     .image-block
     {
         width: 350px;
-        margin: 1vw;
+        margin: 10px;
     }
     .image-block-type2 
     {
@@ -499,7 +499,7 @@
     .image-block
     {
         width: 400px;
-        margin: 1vw;
+        margin: 20px;
     }
     .image-block-type2 
     {
@@ -514,11 +514,6 @@
         margin-top: 4vw;
         margin-bottom: 2vw;
     }
-    .image-block
-    {
-        width: 450px;
-        margin: 1vw;
-    }
     .image-block-type2 
     {
         width: 450px;
@@ -531,11 +526,6 @@
     {
         width: 50%;
     }
-    .image-block
-    {
-        margin: 1vw;
-        width: 550px;
-    }
 }
 
 @media (min-width: 2561px) 
@@ -543,11 +533,6 @@
     .block-container-type2 
     {
         width: 55%;
-    }
-    .image-block
-    {
-        margin: 1vw;
-        width: 550px;
     }
     .image-block-type2 
     {
