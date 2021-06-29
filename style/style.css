@@ -178,9 +178,28 @@ hr
 .landing-page-banner
 {
     width: 100%;
-    height: 40%;
-    background-image: url("paper.gif");
-    background-color: #cccccc;
+    height: 700px;
+    background-image: url("../assets/img/elementsBanniere/Banniere_Studio_Savalle.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.99;
+}
+.title-banner-langing-page
+{
+    display: flex;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.sub-title-landing-page
+{
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: #db6227;
+    margin: 40px 0;
 }
 
 /* BOUTONS DIAGONALE */
@@ -251,6 +270,155 @@ hr
   transform: skewx(0deg);
 }
 
+@media (max-width: 768px)
+{
+    .bouton-diagonale-2:before,
+    .bouton-diagonale-1:after,
+    .bouton-diagonale-2:before,
+    .bouton-diagonale-1:after 
+    {
+        display: none;
+    }
+    .boutons-diagonale-container
+    {
+        flex-direction: column;
+    }
+    .bouton-diagonale-1,
+    .bouton-diagonale-2 
+    {
+        margin: 20px auto;
+    }
+
+}
+
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
+
+/* BANNIERES */
+.banner-presentation-boutique
+{
+    width: 90%;
+    height: 600px;
+    background-image: url("../assets/img/elementsBanniere/img-banniere-boutique.png");
+    background-size: cover;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 20px;
+}
+.banner-presentation-seance-studio
+{
+    width: 90%;
+    height: 600px;
+    background-image: url("../assets/img/elementsBanniere/img-banniere-seance-studio.png");
+    background-size: cover;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 20px;
+}
+.banner-presentation-scolaire
+{
+    width: 90%;
+    height: 600px;
+    background-image: url("../assets/img/elementsBanniere/img-banniere-photo-scolaire.png");
+    background-size: cover;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 20px;
+}
+.banner-links
+{
+    display: flex;
+    margin: 0 auto;
+}
+.banners-buttons
+{
+    width: 300px;
+    transition: 350ms;
+    border: 1px solid #db6227;
+    border-radius: 30px;
+}
+    .banners-buttons:hover
+    {
+        transform: scale(1.5);
+    }
+
+.img-equipe-landing-page
+{
+    display: flex;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.img-presentation-equipe-landing-page
+{
+    width: 100%;
+}
+
+
+/* Avis */
+.avis-landing-page
+{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper-avis
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid #db6227;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 1vw;
+    align-self: center;
+}
+.text-avis
+{
+    font-size: 22px;
+}
+.infos-avis
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-nom-date-avis
+{
+    display: flex;
+    flex-direction: column;
+}
+.nom-avis
+{
+    font-size: 22px;
+}
+.date-avis
+{
+    font-size: 22px;
+}
+.bouton-avis
+{
+    width: 4vw;
+    margin-left: 25px;
+    transition: 350ms;
+}
+    .bouton-avis:hover
+    {
+        transform: scale(1.2);
+    }
+
+/* MEDIA QUERIES */   
+@media (max-width: 1200px)
+{
+    .avis-landing-page
+    {
+        flex-direction: column;
+    }
+    
+}
+
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
 
 /* ------------------------------------------------ */
 /* ----------- */ /* PAGE CONTACT */ /* ----------- */ 
@@ -441,6 +609,8 @@ hr
   }
 }
 
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
+
 /* ------------------------------------------- */
 /* ----------- */ /* YOUTUBE */ /* ----------- */ 
 /* ------------------------------------------- */
@@ -515,6 +685,8 @@ hr
         }
 }
 
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
+
 /* -------------------------------------------- */
 /* ----------- */ /* SCOLAIRE */ /* ----------- */ 
 /* -------------------------------------------- */
@@ -527,6 +699,8 @@ hr
         text-decoration: none;
     }
 
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
+
 /* -------------------------------------------- */
 /* ----------- */ /* SCOLAIRE */ /* ----------- */ 
 /* -------------------------------------------- */
@@ -535,6 +709,8 @@ hr
     width: 250px;
     border-radius: 8px;
 }
+
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
 
 /* ---------------------------------------- */
 /* ----------- */ /* ANTS */ /* ----------- */ 
@@ -557,6 +733,8 @@ hr
     align-self: center;
 }
 
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
+
 /* ----------------------------------------- */
 /* ----------- */ /* DRÔNE */ /* ----------- */ 
 /* ----------------------------------------- */
@@ -572,6 +750,7 @@ hr
     margin: 0 0;
 }
 
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
 
 /* ------------------------------------------------------------------ */
 /* ----------- */ /* SEANCE PHOTO ( séance studio ) */ /* ----------- */ 
@@ -595,6 +774,8 @@ hr
     width: 350px;
     border-radius: 8px;
 }
+
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
 
 /* ------------------------------------------------- */
 /* ----------- */ /* FICHE PRODUIT */ /* ----------- */ 
@@ -738,6 +919,7 @@ hr
 {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   width: 1400px;
 }
 

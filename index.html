@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta title & description -->
     <title> Studio Savalle </title>
 
     <!-- Font -->
@@ -17,7 +19,10 @@
     <link rel="stylesheet" href="style/NavBar.css">
     <link rel="stylesheet" href="style/Footer.css">
     <link rel="stylesheet" href="style/blocks.css">
-    <link rel="stylesheet" href="style/test.css">
+
+    <!-- SLICK -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 
 </head>
 
@@ -202,89 +207,173 @@
             </nav>
         </header>  
 
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
+            <section>
+                <div class="landing-page-banner">
+                    <div class="logo-n-text-banner">
+                        <img class="title-banner-langing-page" src="assets/img/Studio_Savalle_Titre.png">
+                        <!-- diag. buttons -->
+                        <ul class="boutons-diagonale-container">
+                            <li class="bouton-diagonale-1">
+                                <a class="bouton-diagonale" href="Scolaire.html">
+                                    Photographie Scolaire
+                                </a>
+                            </li>
+                            <li class="bouton-diagonale-2">
+                                <a class="bouton-diagonale" href="seancesStudio.html">
+                                    Photographie Studio
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-       <img src="assets/img/work_in_progress.jpg" alt="Développement en cours" style=" display: flex; margin: 0 auto;">
+                <br> <br> <br>
 
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
+                <div class="banner-presentation-boutique">
+                    <a class="banner-links" href="ProduitsDerives.html" target="_blank">
+                        <img class="banners-buttons" src="assets/img/elementsBanniere/img-bouton-boutique.png">
+                    </a>
+                </div>
 
-       <section style="text-align: center;">
-           <div class="landing-page-banner">
-                <img src="assets/img/Studio_Savalle_Titre.png">
-                <!-- diag. buttons -->
-                <ul class="boutons-diagonale-container">
-                    <li class="bouton-diagonale-1">
-                        <a class="bouton-diagonale" href="Scolaire.html">
-                            Photographie Scolaire
-                        </a>
-                    </li>
-                    <li class="bouton-diagonale-2">
-                        <a class="bouton-diagonale" href="seancesStudio.html">
-                            Photographie Studio
-                        </a>
-                    </li>
-                </ul>
-           </div>
+                <br> <br> <br>
 
-           <br> <br> <br>
-            <div>
-               <button> Les nouveautés </button>
-            </div>
+                <div class="banner-presentation-seance-studio">
+                    <a class="banner-links" href="seancesStudio.html" target="_blank">
+                        <img class="banners-buttons" src="assets/img/elementsBanniere/img-bouton-seances-studio.png">
+                    </a>
+                </div>
 
-            <br> <br> <br>
-            <div>
-                <button> Notre boutique en ligne </button>
-            </div>
+                <br> <br> <br>
 
-            <br> <br> <br>
-            <div>
-                <button> Nos séances en studio </button>
-            </div>
+                <div class="banner-presentation-scolaire">
+                    <a class="banner-links" href="RestaurationPhoto.html" target="_blank">
+                        <img class="banners-buttons" src="assets/img/elementsBanniere/img-bouton-photo-scolaire.png">
+                    </a>
+                </div>
 
-            <br> <br> <br>
-            <div>
-                <button> La photographie scolaire </button>
-            </div>
+                <br> <br> <br>
 
-            <br> <br> <br>
-            <div>
-                L'équipe 
-            </div>
+                <hr style="display: flex; margin: 150px auto;">
 
-            <br> <br> <br>
-            <div>
-                Spécialisée dans la photographie scolaire depuis 2016 et bénéficiant 
-                d’une expérience totale de 10 ans, Studio Savalle est désormais 
-                une équipe composée de 3 personnes.
-            </div>
+                <div>
+                    <h2 class="sub-title-landing-page"> L'équipe </h2>
+                    <img class="img-equipe-landing-page" src="assets/img/img-equipe.png">
+                </div>
 
-            <br> <br> <br>
-            <div>
-                Ils nous font confiance 
-            </div>
+                <br> <br> <br>
 
-            <br> <br> <br>
-            <div>
-                Nos partenaires 
-            </div>
+                <div>
+                    <img class="img-presentation-equipe-landing-page" src="assets/img/img-presentation-studio-savalle.png">
+                </div>
 
-       </section>
+                <br> <br> <br>
 
+                <hr style="display: flex; margin: 100px auto;">
 
-        <main>
+                <div class="block-wrapper">
+                    <h2 class="sub-title-landing-page"> Ils nous font confiance </h2>
+                    <div class="avis-landing-page">
+                        <!-- 1er avis -->
+                        <div class="wrapper-avis">
+                            <p class=text-avis>
+                                Très professionnelle, souriante, accueillante je recommande vivement 
+                                elle fait des photos magnifiques j’en n’ai eu la surprise avec des photos 
+                                de ma filles pour ses 2 ans.
+                            </p>
+                            <hr>
+                            <div class="infos-avis">
+                                <div class="container-nom-date-avis">
+                                    <p class="nom-avis">
+                                        <strong> Anais Nanou Colyne </strong>
+                                    </p>
+                                    <p class="date-avis">
+                                        27 Mars 2021
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="bouton-avis" src="assets/img/avis/bouton-avis-landing-page.png">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 2ème avis -->
+                        <div class="wrapper-avis">
+                            <p class=text-avis>
+                                C’est tout d’abord des professionnels qui connaissent leur travail, 
+                                qui le font avec amour et passion et qui ont le goût du travail bien fait.
+                                On se sent tout de suite à l’aise et ma fille a vécu une aventure extraordinaire avec le père Noël. 
+                                Je recommande à 1000% et je leur accorde ma plus grande confiance.
+                            </p>
+                            <hr>
+                            <div class="infos-avis">
+                                <div class="container-nom-date-avis">
+                                    <p class="nom-avis">
+                                        <strong> Pascaline Perier </strong>
+                                    </p>
+                                    <p class="date-avis">
+                                        18 Février 2021
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="bouton-avis" src="assets/img/avis/bouton-avis-landing-page.png">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 3ème avis -->
+                        <div class="wrapper-avis">
+                            <p class=text-avis>
+                                Photos identité. Merci à vous pour les photos. Rdv rapide et super travail. 
+                                Équipe pro et très gentille. N hésitez pas.
+                                Passez vous du photomaton et allez chez un professionnel agréé. 👍
+                            </p>
+                            <hr>
+                            <div class="infos-avis">
+                                <div class="container-nom-date-avis">
+                                    <p class="nom-avis">
+                                        <strong> Chris Désert </strong>
+                                    </p>
+                                    <p class="date-avis">
+                                        3 Mars 2021
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="bouton-avis" src="assets/img/avis/bouton-avis-landing-page.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="display: flex; margin: 150px auto;">
+
+            <section class="block-wrapper">
+                <!-- Caroussel SLICK -->
+                <h2 class="sub-title-landing-page"> Nos Partenaires </h2>
+                <div class="slick-slider-wrapper">
+                    <div class="slider-1-slick-container slider-slick-1">
+                            <div class="slider-1-slick-items">
+                                <img class="slider-1-slick-images" src="assets/img/partenaires/studio_savalle_partenaire_CE3P.png" alt="Impression 3D Licorne">
+                                <p class="text-align-center"> CE3P </p>
+                            </div>
+                            <div class="slider-1-slick-items">
+                                <img class="slider-1-slick-images" src="assets/img/partenaires/studio_savalle_partenaire_Divrir.png" alt="Impression 3D Licorne">
+                                <p class="text-align-center"> Divrir </p>
+                            </div>
+                            <div class="slider-1-slick-items">
+                                <img class="slider-1-slick-images" src="assets/img/partenaires/studio_savalle_partenaire_EMS.png" alt="Impression 3D Licorne">
+                                <p class="text-align-center"> EMS </p>
+                            </div>
+                            <div class="slider-1-slick-items">
+                                <img class="slider-1-slick-images" src="assets/img/partenaires/studio_savalle_partenaire_ORPI.png" alt="Impression 3D Licorne">
+                                <p class="text-align-center"> ORPI Jouen immobilier </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
              <!-- SCROLL TOP BUTTON -->
              <button onclick="clickToGoTop()" id="scrollTopButon" title=" Retourner en haut "> ⬆ </button>
-             
-        </main>
 
 
         <!-- Footer & Copyright -->
@@ -335,6 +424,13 @@
                 </div>
             </div>
         </footer>
+
+         <!-- scripts SLICK -->
+         <script type="text/javascript" src="assets/jquery/jquery-1.11.0.min.js"> </script>
+         <script type="text/javascript" src="assets/jquery/jquery-migrate-1.2.1.min.js"> </script>
+         <script type="text/javascript" src="assets/slick/slick.min.js"> </script>
+         <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"> </script> -->
+         <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"> </script> -->
 
         <!-- Scripts JS -->
         <script type="text/javascript" src="menuTopNav.js"> </script>

@@ -48,8 +48,7 @@ function reduireQuantite()
 
 $(function()
 {
-    $('.slider-slick-1').slick(
-    {
+    $('.slider-slick-1').slick({
         centerMode: true,
         infinite: true,
         slidesToShow: 4,
@@ -68,7 +67,7 @@ $(function()
                 breakpoint: 1024,
                 settings: 
                 {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                     centerPadding: '0px',
                     infinite: true,
@@ -79,16 +78,16 @@ $(function()
                 breakpoint: 768,
                 settings: 
                 {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                 }
             },
             {
-                breakpoint: 300,
+                breakpoint: 400,
                 settings: 
                 {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 1,
+                    slidesToScroll: 4,
                 }
             }
         ],
