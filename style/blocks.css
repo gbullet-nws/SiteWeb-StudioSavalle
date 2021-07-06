@@ -341,7 +341,7 @@
     }
     .block-text
     {
-        margin-left: 5%;
+        margin-left: none;
     }
     .block-text-type3
     {
@@ -384,6 +384,14 @@
     {
         width: 300px;
         height: auto;
+    }
+}
+
+@media (max-width: 760px)
+{
+    .block-wrapper-type6 
+    {
+        flex-direction: column;
     }
 }
 

@@ -80,15 +80,11 @@ hr
     }
 
 /* Media Querries */
-@media (max-width: 768px)
+@media (max-width: 768px) /* main */
 {
     main
     {
         margin-top: 100px;
-    }
-    .mobile-text-align-center
-    {
-        text-align: center;
     }
 }
 
@@ -119,6 +115,11 @@ hr
         {
             margin-bottom: 100px;
         }
+    
+    .mobile-text-align-center
+    {
+        text-align: center;
+    }
 }
 
 /* ----------------------------------------------------- *//* ----------------------------------------------------- */
@@ -983,16 +984,23 @@ hr
 /* ----------- */ /* CREATIONS GRAPHIQUE */ /* ------------ */ 
 /* -------------------------------------------------------- */
 
+/* 1ère section */
 .faireparts-img-container
 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
+/* 2ème section */
 .container-mockups-creation-graphique
 {
-    width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+.sub-container-mockups-creation-graphique
+{
+    display: flex;
+    flex-direction: column;
 }
 .mockups-img-container
 {
@@ -1002,6 +1010,39 @@ hr
 {
     width: 300px;
     border-radius: 20px;
+    margin: 5px 5px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px)
+{
+    .faireparts-img-container
+    {
+        flex-direction: column;
+    }
+    .container-mockups-creation-graphique
+    {
+        flex-direction: column;
+    }
+}
+
+/* ------------------------- *//* ------------------------- *//* ------------------------- */
+
+/* ------------------------------------------------------- */
+/* ----------- */ /* NETTOYAGE APPAREIL */ /* ------------ */ 
+/* ------------------------------------------------------- */
+
+.images-nettoyageAppreil 
+{
+    width: 300px;
+}
+
+@media (max-width: 768px)
+{
+    .images-nettoyageAppreil 
+    {
+        width: 250px;
+    }
 }
 
 
